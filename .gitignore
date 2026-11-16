@@ -1,0 +1,32 @@
+# ---- Unreal Engine 5 ----
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+# Cooked / packaged builds
+Windows/
+WindowsNoEditor/
+*.pak
+# ---- OS / misc ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+# ---- Local downloads (re-download with tools/download_textures.sh) ----
+ngmi_textures/
+# ---- Secrets ----
+.env
+*.pem
+*.key

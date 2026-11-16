@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NGMI – Ascension Clinic Material Preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  html,body{margin:0;height:100%;background:#020503;color:#bfe8c8;font-family:system-ui,-apple-system,sans-serif;overflow:hidden}
+  canvas{display:block}
+  #ui{position:fixed;left:12px;top:12px;width:300px;max-width:calc(100vw - 24px);background:rgba(2,8,4,.82);border:1px solid #1e4a2a;border-radius:10px;padding:12px 14px;font-size:13px;z-index:5;backdrop-filter:blur(4px)}
+  #ui h1{font-size:15px;margin:0 0 4px;color:#7df0a0;letter-spacing:.4px}
+  #ui p{margin:4px 0;line-height:1.35}
+  .row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+  button{background:#0b1f12;border:1px solid #2a6b3c;color:#cfeedd;padding:5px 9px;border-radius:6px;cursor:pointer;font-size:12px}
+  button.on{background:#2a6b3c;color:#fff}
+  #ui label{font-size:11px;opacity:.7;text-transform:uppercase;letter-spacing:.6px;display:block;margin-top:10px}
+  #toggle{position:fixed;left:12px;top:12px;z-index:6;display:none}
+  #load{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#020503;z-index:10;transition:opacity .6s}
+  #load .t{font-size:13px;letter-spacing:2px;color:#5fd486;margin-bottom:10px}
+  #bar{width:220px;height:4px;background:#0c2214;border-radius:2px;overflow:hidden}
+  #bar div{height:100%;width:0;background:#4cff8a;transition:width .2s}
+  #hint{position:fixed;right:12px;bottom:12px;font-size:12px;opacity:.7;z-index:5;text-align:right}
+  #credit{position:fixed;left:12px;bottom:12px;font-size:11px;opacity:.55;z-index:5}
+  #credit a{color:#8fdcab}
+</style>
+</head>
+<body>
+<div id="load"><div class="t">ENTERING ASCENSION CLINIC…</div><div id="bar"><div></div></div></div>
+
+<button id="toggle">Show panel</button>
+<div id="ui">
+  <h1>NGMI – Ascension Clinic</h1>
+  <p>Material test for the UE5 build: real photoscanned CC0 textures from Poly Haven under the game's eerie green lighting.</p>
+  <label>Walls</label><div class="row" id="walls"></div>
+  <label>Floor</label><div class="row" id="floors"></div>
+  <label>Lighting</label>
+  <div class="row">
+    <button id="flash" class="on">Flashlight</button>
+    <button id="flicker" class="on">Flicker</button>
+    <button id="hd">HD 2K textures</button>
+  </div>
+  <div class="row" style="margin-top:10px"><button id="hide">Hide panel</button></div>
+  <p style="margin-top:10px;opacity:.6;font-size:11px">Parody game. Not affiliated with any real person. Private preview, do not share publicly.</p>
+</div>
+<div id="hint">Drag to look · scroll to zoom<br>W / S or ↑ / ↓ to walk</div>
+<div id="credit">Textures: <a href="https://polyhaven.com" target="_blank" rel="noopener">Poly Haven</a> (CC0)</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+// ---------- Real CC0 materials (Poly Haven) ----------
+const WALLS = [
+  ['concrete_wall_004', 'Concrete Wall'],
+  ['painted_concrete_02', 'Painted Concrete'],
+  ['rusted_shutter', 'Rusted Shutter'],
+  ['green_metal_rust', 'Green Metal Rust'],
+  ['rusty_metal_03', 'Rusty Metal'],
+];
+const FLOORS = [
+  ['dirty_tiles', 'Dirty Tiles'],
+  ['worn_tile_floor', 'Worn Tiles'],
+  ['concrete_floor_damaged_01', 'Damaged Concrete'],
+  ['metal_grate_rusty', 'Rusty Grate'],
+];
+let RES = '1k';
+const cdn = (slug, map) => `https://dl.polyhaven.org/file/ph-assets/Textures/jpg/${RES}/${slug}/${slug}_${map}_${RES}.jpg`;
+
+// ---------- Renderer & post ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x010302);
+scene.fog = new THREE.FogExp2(0x041008, 0.075);
+
+const camera = new THREE.PerspectiveCamera(68, innerWidth / innerHeight, 0.05, 80);
+camera.position.set(0, 1.65, 8.5);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 1.5, 4);
+controls.enableDamping = true;
+controls.maxPolarAngle = Math.PI * 0.62;
+controls.minDistance = 0.6;
+controls.maxDistance = 6;
+
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.85, 0.6, 0.82);
+composer.addPass(bloom);
+const grain = new ShaderPass({
+  uniforms: { tDiffuse: { value: null }, time: { value: 0 } },
+  vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }`,
+  fragmentShader: `
+    uniform sampler2D tDiffuse; uniform float time; varying vec2 vUv;
+    float rand(vec2 co){ return fract(sin(dot(co, vec2(12.9898,78.233))) * 43758.5453); }
+    void main(){
+      vec4 c = texture2D(tDiffuse, vUv);
+      // green-tinted grade
+      c.rgb = mix(c.rgb, c.rgb * vec3(0.82, 1.08, 0.88), 0.55);
+      // vignette
+      float d = distance(vUv, vec2(0.5));
+      c.rgb *= smoothstep(0.85, 0.28, d);
+      // film grain
+      c.rgb += (rand(vUv * (time + 1.0)) - 0.5) * 0.06;
+      gl_FragColor = c;
+    }`
+});
+composer.addPass(grain);
+composer.addPass(new OutputPass());
+
+// ---------- Loading ----------
+const manager = new THREE.LoadingManager();
+const bar = document.querySelector('#bar div');
+manager.onProgress = (_u, done, total) => { bar.style.width = (100 * done / total) + '%'; };
+manager.onLoad = () => { const l = document.getElementById('load'); l.style.opacity = 0; setTimeout(() => l.remove(), 700); };
+const loader = new THREE.TextureLoader(manager);
+loader.setCrossOrigin('anonymous');
+
+const aniso = renderer.capabilities.getMaxAnisotropy();
+function pbr(slug, rx, ry, opts = {}) {
+  const diff = loader.load(cdn(slug, 'diff'));
+  diff.colorSpace = THREE.SRGBColorSpace;
+  const nor = loader.load(cdn(slug, 'nor_gl'));
+  const rough = loader.load(cdn(slug, 'rough'));
+  for (const t of [diff, nor, rough]) {
+    t.wrapS = t.wrapT = THREE.RepeatWrapping;
+    t.repeat.set(rx, ry);
+    t.anisotropy = aniso;
+  }
+  return new THREE.MeshStandardMaterial({
+    map: diff, normalMap: nor, roughnessMap: rough, roughness: 1,
+    metalness: opts.metalness ?? 0.0, normalScale: new THREE.Vector2(1.2, 1.2),
+  });
+}
+
+// ---------- Corridor (1 tile ≈ 2 m) ----------
+const W = 4, H = 3.2, L = 22;
+const geo = {
+  floor: new THREE.PlaneGeometry(W, L),
+  ceil: new THREE.PlaneGeometry(W, L),
+  side: new THREE.PlaneGeometry(L, H),
+  end: new THREE.PlaneGeometry(W, H),
+};
+const mats = {};
+function buildMats() {
+  mats.wall = pbr(state.wall, L / 2, H / 2);
+  mats.end = pbr(state.wall, W / 2, H / 2);
+  mats.floor = pbr(state.floor, W / 2, L / 2);
+  mats.ceil = pbr('concrete_wall_004', W / 2, L / 2);
+  mats.pipe = pbr('rusty_metal_03', 6, 1, { metalness: 0.6 });
+  mats.shutter = pbr('rusted_shutter', 1, 1, { metalness: 0.5 });
+}
+const state = { wall: 'concrete_wall_004', floor: 'dirty_tiles' };
+buildMats();
+
+const floor = new THREE.Mesh(geo.floor, mats.floor);
+floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+const ceil = new THREE.Mesh(geo.ceil, mats.ceil);
+ceil.rotation.x = Math.PI / 2; ceil.position.y = H; scene.add(ceil);
+const left = new THREE.Mesh(geo.side, mats.wall);
+left.rotation.y = Math.PI / 2; left.position.set(-W / 2, H / 2, 0); left.receiveShadow = true; scene.add(left);
+const right = new THREE.Mesh(geo.side, mats.wall);
+right.rotation.y = -Math.PI / 2; right.position.set(W / 2, H / 2, 0); right.receiveShadow = true; scene.add(right);
+const back = new THREE.Mesh(geo.end, mats.end);
+back.position.set(0, H / 2, -L / 2); scene.add(back);
+
+// Rusty pipes + brackets
+for (const x of [-W / 2 + 0.22, -W / 2 + 0.42, W / 2 - 0.25]) {
+  const r = x === -W / 2 + 0.42 ? 0.05 : 0.085;
+  const pipe = new THREE.Mesh(new THREE.CylinderGeometry(r, r, L, 20), mats.pipe);
+  pipe.rotation.x = Math.PI / 2; pipe.position.set(x, H - 0.22, 0); pipe.castShadow = true; scene.add(pipe);
+}
+// Rolled-down rusted shutter doors on the right wall
+for (const z of [-3, 5]) {
+  const s = new THREE.Mesh(new THREE.BoxGeometry(0.08, 2.4, 1.8), mats.shutter);
+  s.position.set(W / 2 - 0.04, 1.2, z); s.castShadow = true; s.receiveShadow = true; scene.add(s);
+}
+// Abandoned waiting-room chairs (simple blockout)
+const chairMat = new THREE.MeshStandardMaterial({ color: 0x2b3a30, roughness: 0.6, metalness: 0.4 });
+for (let i = 0; i < 4; i++) {
+  const g = new THREE.Group();
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.06, 0.5), chairMat);
+  seat.position.y = 0.46;
+  const backr = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.5, 0.05), chairMat);
+  backr.position.set(0, 0.74, -0.23);
+  const leg = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.46, 0.04), chairMat);
+  for (const [lx, lz] of [[-.22, -.22], [.22, -.22], [-.22, .22], [.22, .22]]) {
+    const l = leg.clone(); l.position.set(lx, 0.23, lz); g.add(l);
+  }
+  g.add(seat, backr);
+  g.traverse(o => { o.castShadow = true; o.receiveShadow = true; });
+  g.position.set(-W / 2 + 0.45, 0, 1 + i * 0.6);
+  g.rotation.y = Math.PI / 2 + (i === 2 ? 0.5 : 0);
+  if (i === 3) { g.rotation.z = 1.4; g.position.y = 0.25; g.position.x += 0.3; } // knocked over
+  scene.add(g);
+}
+
+// ---------- Green ring lights (NGMI signature) ----------
+const ringLights = [];
+for (let z = -8; z <= 8; z += 4) {
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(0.38, 0.025, 12, 64),
+    new THREE.MeshStandardMaterial({ color: 0x031a0a, emissive: 0x3cff7a, emissiveIntensity: 3 }));
+  ring.rotation.x = Math.PI / 2; ring.position.set(0, H - 0.04, z); scene.add(ring);
+  const light = new THREE.PointLight(0x46ff86, 9, 9, 2);
+  light.position.set(0, H - 0.35, z); scene.add(light);
+  ringLights.push({ ring, light, seed: Math.random() * 100, dead: z === 0 });
+}
+scene.add(new THREE.HemisphereLight(0x123320, 0x020403, 0.35));
+
+// Neon sign at the far end
+const signCanvas = document.createElement('canvas');
+signCanvas.width = 1024; signCanvas.height = 256;
+const sc = signCanvas.getContext('2d');
+sc.fillStyle = '#000'; sc.fillRect(0, 0, 1024, 256);
+sc.font = 'bold 92px system-ui, sans-serif'; sc.textAlign = 'center';
+sc.shadowColor = '#4cff8a'; sc.shadowBlur = 30; sc.fillStyle = '#9dffbf';
+sc.fillText('ASCENSION CLINIC', 512, 120);
+sc.font = 'bold 46px system-ui, sans-serif'; sc.fillStyle = '#ff5a5a'; sc.shadowColor = '#ff2a2a';
+sc.fillText('NO REFUNDS', 512, 200);
+const signTex = new THREE.CanvasTexture(signCanvas); signTex.colorSpace = THREE.SRGBColorSpace;
+const sign = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.6),
+  new THREE.MeshBasicMaterial({ map: signTex, toneMapped: false }));
+sign.position.set(0, 2.55, -L / 2 + 0.03); scene.add(sign);
+
+// Exit Mirror
+const mirror = new THREE.Mesh(new THREE.PlaneGeometry(1.1, 2.0),
+  new THREE.MeshStandardMaterial({ color: 0xb8e8c8, metalness: 1, roughness: 0.04, emissive: 0x0b2a14, emissiveIntensity: 0.8 }));
+mirror.position.set(0, 1.1, -L / 2 + 0.03); scene.add(mirror);
+const frame = new THREE.Mesh(new THREE.BoxGeometry(1.25, 2.15, 0.06), mats.pipe);
+frame.position.set(0, 1.1, -L / 2 + 0.01); scene.add(frame);
+
+// ---------- Flashlight ----------
+const flash = new THREE.SpotLight(0xfff2d6, 28, 18, Math.PI / 7, 0.45, 1.6);
+flash.castShadow = true;
+flash.shadow.mapSize.set(1024, 1024);
+flash.shadow.bias = -0.0005;
+scene.add(flash, flash.target);
+
+// ---------- UI ----------
+function buttons(el, list, key, apply) {
+  list.forEach(([slug, name]) => {
+    const b = document.createElement('button');
+    b.textContent = name; if (slug === state[key]) b.classList.add('on');
+    b.onclick = () => {
+      [...el.children].forEach(c => c.classList.remove('on')); b.classList.add('on');
+      state[key] = slug; apply();
+    };
+    el.appendChild(b);
+  });
+}
+function applyWalls() {
+  mats.wall = pbr(state.wall, L / 2, H / 2); mats.end = pbr(state.wall, W / 2, H / 2);
+  left.material = right.material = mats.wall; back.material = mats.end;
+}
+function applyFloor() { mats.floor = pbr(state.floor, W / 2, L / 2); floor.material = mats.floor; }
+buttons(document.getElementById('walls'), WALLS, 'wall', applyWalls);
+buttons(document.getElementById('floors'), FLOORS, 'floor', applyFloor);
+
+let flashOn = true, flickerOn = true;
+document.getElementById('flash').onclick = e => { flashOn = !flashOn; e.target.classList.toggle('on', flashOn); flash.visible = flashOn; };
+document.getElementById('flicker').onclick = e => { flickerOn = !flickerOn; e.target.classList.toggle('on', flickerOn); };
+document.getElementById('hd').onclick = e => {
+  RES = RES === '1k' ? '2k' : '1k'; e.target.classList.toggle('on', RES === '2k');
+  buildMats(); applyWalls(); applyFloor(); ceil.material = mats.ceil;
+};
+const ui = document.getElementById('ui'), tog = document.getElementById('toggle');
+document.getElementById('hide').onclick = () => { ui.style.display = 'none'; tog.style.display = 'block'; };
+tog.onclick = () => { ui.style.display = 'block'; tog.style.display = 'none'; };
+
+// Walk with W/S or arrows (moves camera and target together, clamped to corridor)
+const keys = {};
+addEventListener('keydown', e => keys[e.key.toLowerCase()] = true);
+addEventListener('keyup', e => keys[e.key.toLowerCase()] = false);
+const fwd = new THREE.Vector3();
+
+// ---------- Loop ----------
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.05), t = clock.elapsedTime;
+
+  const move = (keys['w'] || keys['arrowup'] ? 1 : 0) - (keys['s'] || keys['arrowdown'] ? 1 : 0);
+  if (move) {
+    camera.getWorldDirection(fwd); fwd.y = 0; fwd.normalize().multiplyScalar(move * 2.2 * dt);
+    const nz = THREE.MathUtils.clamp(camera.position.z + fwd.z, -L / 2 + 1, L / 2 - 0.5);
+    const dz = nz - camera.position.z;
+    camera.position.z += dz; controls.target.z += dz;
+    camera.position.x = THREE.MathUtils.clamp(camera.position.x + fwd.x, -W / 2 + 0.4, W / 2 - 0.4);
+  }
+
+  for (const r of ringLights) {
+    let f = 1;
+    if (flickerOn) {
+      f = 0.8 + 0.2 * Math.sin(t * 11 + r.seed) * Math.sin(t * 2.7 + r.seed);
+      if (Math.random() < 0.006) f = 0.05;
+      if (r.dead) f = Math.random() < 0.08 ? 1 : 0.02; // one broken light, horror beat
+    }
+    r.light.intensity = 9 * f;
+    r.ring.material.emissiveIntensity = 3 * f;
+  }
+
+  // flashlight follows the camera with a slight hand sway
+  flash.position.copy(camera.position).add(new THREE.Vector3(0.18, -0.15, 0).applyQuaternion(camera.quaternion));
+  camera.getWorldDirection(fwd);
+  flash.target.position.copy(camera.position).addScaledVector(fwd, 5)
+    .add(new THREE.Vector3(Math.sin(t * 1.3) * 0.05, Math.sin(t * 2.1) * 0.04, 0));
+
+  grain.uniforms.time.value = t % 10;
+  controls.update();
+  composer.render();
+}
+animate();
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight);
+  bloom.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>
