@@ -8,7 +8,7 @@
 
 **Status:** pre-production (design + asset sourcing). No UE5 project yet.
 **Owner:** [@devspideyy](https://github.com/devspideyy) · **Collaborator:** [@rexyysilent](https://github.com/rexyysilent)
-**Repo visibility:** private. Do not make it public (see [Legal](docs/LEGAL.md)).
+**Repo visibility:** private by default. Temporarily public 2026-11-17 → 2026-11-24 by the owner's choice (see [DECISIONS](docs/DECISIONS.md) D11).
 
 ---
 
@@ -218,7 +218,7 @@ Task breakdown: [docs/ROADMAP.md](docs/ROADMAP.md).
 3. **Never joke about real people's real-life legal or medical events.**
 4. **Every third-party asset must have a recorded license** in `docs/ASSETS.md`.
 5. **Mic audio stays on the player's machine.** Never upload it.
-6. **Keep this repo private.**
+6. **Keep this repo private** outside the owner-approved public window (D11).
 
 Details: [docs/LEGAL.md](docs/LEGAL.md).
 

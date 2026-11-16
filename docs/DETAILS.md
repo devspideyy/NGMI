@@ -11,7 +11,7 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 
 ---
 
-## Top 15 (if you only do these)
+## Top picks (if you only do these)
 
 | # | Detail | Where | Cost | Priority |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,8 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 | 13 | Elevator rides with ads on a small screen (covers level loading) | Between floors | M | ★★ |
 | 14 | Settings menu jokes ("Jawline quality: Ultra") | Menu | S | ★★ |
 | 15 | Post-credits barbershop scene | End | M | ★★ |
+| 16 | Wall jokes on every floor (section 12) | All | S | ★★★ |
+| 17 | Orthodontic horror: Expander Wall, Headgear stalker, The Chair (section 13) | L2, L4 | M | ★★★ |
 
 ---
 
@@ -193,6 +195,134 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 | Mic mode is opt-in, local only, with a clear "mic is listening" icon | S | ★★★ |
 | Hold-to-mew can be toggle-to-mew | S | ★★ |
 | Colour-blind safe UI; green grade never carries information alone | S | ★★ |
+
+## 12. Wall jokes (signs, posters, graffiti)
+
+Readable text on the walls is the cheapest comedy in the game: one decal each. Place one every ~20 m of corridor, more in safe rooms, fewer in chases. Font style per type: **Sign** = clinic signage (clean, green) · **Poster** = glossy ad · **Graffiti** = scratched/marker · **Notice** = printed A4 taped up.
+
+### Floor 1 — The Waiting Room
+| Type | Text |
+| --- | --- |
+| Sign | "PLEASE TAKE A NUMBER. YOUR NUMBER IS 5." |
+| Sign | "Estimated waiting time: until you're a 10." |
+| Poster | "BEFORE → AFTER" (both photos identical; the After one has a ring light) |
+| Notice | "Employee of the Month: Brenda. (Every month since 1997.)" |
+| Sign | "Smile! You're on 400 cameras." |
+| Notice | "Have you rated yourself today? ☐ Yes ☐ Also yes" |
+| Sign | "Wet floor. Great for your skin." |
+| Notice | "Mirrors removed from toilets. They kept staring back." |
+| Graffiti | "i came in for a haircut" (Kevin stops and reads it twice) |
+
+### Floor 2 — Mewing Catacombs
+| Type | Text |
+| --- | --- |
+| Sign | "QUIET ZONE. Mouth Breathers on duty." |
+| Sign | "Nose breathing only beyond this point." |
+| Graffiti | "Day 4,312 of mewing. Still no jaw. Still hope." |
+| Graffiti | "Tongue up. Chin up. Rent due." |
+| Poster (Grandpa) | "THE FACE WANTS TO GO FORWARD. LET IT." |
+| Notice | "LOST: one tongue posture. Last seen 2009. Answers to 'roof'." |
+| Poster (ortho) | "Turn the key a quarter turn. Every night. EVERY. NIGHT." |
+| Poster (ortho) | "Wear your headgear 22 hours a day." (Kevin flinches) |
+
+### Floor 3 — Bone Smash Basement
+| Type | Text |
+| --- | --- |
+| Sign | "Days since last bonk: 0" (counter resets every time a press slams) |
+| Sign | "Hard hats mandatory. Hard faces optional." |
+| Sign | "CAUTION: Hammers swing both ways." |
+| Sign | "Parking: Mid Management only." |
+| Notice | "This machine has no feelings. Neither does Clav." |
+| Poster | "Bone is a mindset." (with Clav's silhouette) |
+| Graffiti | "the bullets apologised" |
+
+### Floor 4 — The Rating Chamber
+| Type | Text |
+| --- | --- |
+| Sign | "SILENCE IN COURT. ALL RATINGS ARE FINAL." |
+| Board | "Today's judge: Androjenic. Today's verdict: four." |
+| Scoreboard | "HIGHEST RATING EVER: 6.2 (a door)" |
+| Notice | "Please do not rate the jury." |
+| Poster (ortho) | "BRACE YOURSELF." (a giant smiling mouth full of braces) |
+
+### Floor 5 — Glow-Up Graveyard
+| Type | Text |
+| --- | --- |
+| Sign | "Keep off the grass. The grass is a 3." |
+| Sign | "Visiting hours: Before and After." |
+| Notice | "No selfies after midnight. They come back." |
+| Tombstones | See section 6 (Derek, Gary, Steve, Kyle, Unknown, Mum) |
+| Graffiti (ortho) | "RETAINERS ARE FOREVER" carved into a crypt door |
+
+### Floor 6 — The Lathered Spa
+| Type | Text |
+| --- | --- |
+| Sign | "No running. Sliding is fine." |
+| Sign | "Pool depth: deeper than your routine." |
+| Notice | "Towels: one per person. Robes: as many as your confidence allows." |
+| Price list | Every treatment costs "Your soul" except "Water: $14" |
+| Poster | "Shower thoughts welcome. Double-cleanse thoughts mandatory." |
+
+### Floor 7 — Runway of the Damned
+| Type | Text |
+| --- | --- |
+| Sign | "Walk like nobody's watching. (Everyone is watching.)" |
+| Notice (backstage) | "NO BLINKING BACKSTAGE." |
+| Door sign | "Dressing Room 2: J. Ferret (in the vents)" |
+| Notice | "Mannequin Union rule 1: don't look at them. Rule 2: see rule 1." |
+| Mirror note | "Smile with your eyes." · "No. Your OTHER eyes." |
+
+### Floor 8 — The Front Camera
+| Type | Text |
+| --- | --- |
+| Notification | "You have 99+ unread insecurities." |
+| Notification | "Screen time this week: yes." |
+| Notification | "Low battery. Low self-esteem. Charge one." |
+| Notification | "3 people viewed your profile. They left." |
+
+### Elevator (every ride)
+| Type | Text |
+| --- | --- |
+| Plaque | "Max capacity: 8 people or 1 ego." |
+| Plaque | "In case of fire, check your angles." |
+| Plaque (scratched) | "going down again?? why" |
+
+---
+
+## 13. Orthodontic horror
+
+**Kevin's fear.** Kevin had braces *and* headgear in school (his Before Photo on Floor 5 shows the braces). Orthodontic gear is the one thing in the clinic that genuinely scares him. Everyone else in the clinic treats these devices as holy objects. For Kevin, they're a horror movie.
+
+**Rule:** scary through sound, shape and movement, never through injury. No blood, no gums, no teeth being pulled. The joke is that Kevin is terrified of objects everyone else worships.
+
+**Kevin's "Ortho Dread" mechanic (M, ★★):** near any orthodontic horror, a faint wire-tightening creak plays, the screen edges pinch inward slightly, his breathing speeds up, and his rating drains −0.05/s. Moving away stops it. Dr. Meow cranking his expander near Kevin also triggers it ("Please stop cranking it near me").
+
+### Set pieces and props
+| Object | Where | What it does | Cost | Priority |
+| --- | --- | --- | --- | --- |
+| **The Expander Wall** | L2 | A wall of palate expanders (MSE-style) in glass specimen jars, labelled like a museum. When you look away, one turns a quarter turn: *click*. When you look back, they've all turned. | M | ★★★ |
+| **Headgear Rack** | L2, L4 | Dozens of reverse-pull face masks hanging like hockey masks in a slasher film. One hook is empty. (The Headgear enemy is the missing one.) | S | ★★★ |
+| **Expander Key doors** | L2 | Locked doors with a giant expander keyhole. Kevin has to turn a giant key a quarter turn; each turn makes the whole corridor creak wider. | M | ★★ |
+| **Retainer Lost & Found** | L1 | A box of clear retainers behind the desk. When you pass, the lids snap open and shut like clams. | S | ★★ |
+| **Rubber Band Dispenser** | L3 | Orthodontic bands stretched across corridors as tripwires; they snap like whips (knockback, −0.25). | S | ★★ |
+| **The Chair** | L4 | A dental chair under an operating lamp. It swivels to face you wherever you stand. Mid-floor, it rolls after you by itself (chase). | M | ★★★ |
+| **Cheek-retractor mannequins** | L7 | Mannequins wearing cheek retractors, forced into wide smiles. They're the audience's front row. | S | ★★★ |
+| **Braces fence** | L5 | The graveyard fence is giant braces wire with brackets as fence posts. | S | ★★ |
+| **Giant facial calipers** | L4 | Androjenic's measuring calipers on the wall, two metres tall; they snap shut when you walk between them (QTE dodge). | M | ★★ |
+| **Mouth-tape roll** | L2 | Pickup: tape Kevin's mouth for 30 s of total silence (Mouth Breathers can't hear him). Kevin: "This is a trend, apparently." | S | ★★★ |
+| **Jaw trainer** | L3 | A chew-block pickup; Clav insists Kevin chews it. Kevin: "It tastes like a phone case." +0.25 rating. | S | ★ |
+| **Symmetry grid projector** | L4 | Projects a green face-grid onto every surface, including Kevin's hands. | S | ★★ |
+
+### New enemies
+| Enemy | Where | Behaviour | Counter | Rating damage |
+| --- | --- | --- | --- | --- |
+| **The Headgear** | L2 (intro), L4, L8 cameo | A floating reverse-pull face mask, rubber bands stretched from it to the walls. Blind; follows the creak of your footsteps. If a band touches you, it *pulls* you toward it. Recurring stalker. | Cut its bands with the scissors pickup; hide behind pillars so bands snag | −0.5 + pull |
+| **Expander Spiders** | L2, L4 | Small expander-shaped crawlers; the screws are their legs. They click faster as they get closer. If one latches onto your face, your FOV stretches wider and wider (screen-warp) until you shake it off. | Mash to shake off; flashlight makes them scatter | −0.25/s while latched |
+| **Retainer Chatterers** | L1, L5 | Clear plastic retainers that chatter like wind-up toy teeth. Harmless alone; a swarm nibbles your rating. Drawn to noise. | Stomp; throw an object away from you to lure them | −0.1 each |
+| **Brace Face** | L5, L7 | Mannequins with cheek retractors and braces. Only move when unobserved, like the rest of the mannequins, but their smile *widens* each time they move. | Keep them in view; back away | −0.75 |
+
+### Kevin's lines (see SCRIPT.md, `ORTHO_` IDs)
+"I had headgear in Year 8. I'm not going back." · "Is that… an expander? Why is it in a jar? Why is it *moving*?" · "Please stop cranking it near me." · "Nope. Rubber bands. I'm out." · "That smile is held open by metal. Nobody's that happy."
 
 ---
 

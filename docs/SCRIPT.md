@@ -85,6 +85,10 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 `[L1_CON_003]` **CON** (once, on first flashlight use): "Flashlights are free! Ring lights are better. Ring lights are love."
 `[L1_CON_004]` **CON** (once, on first rating drop): "Ooh. Bad lighting. Minus point one. Your pores are showing."
 
+*[Behind the desk, a box labelled LOST & FOUND: RETAINERS. As Kevin passes, every clear retainer in it snaps open and shut at once. Clack-clack-clack.]*
+`[L1_KEV_010]` **KEV** (once): "Nope. Retainers. I'm not looking at the retainers."
+`[L1_CON_007]` **CON**: "Unclaimed retainers! Free to a good mouth!"
+
 ### 1.2 Kareem Shammy
 
 *[Fog rolls out of a treatment room. A man in a white robe and a sheet mask steps out, holding a tiny leather product case like a briefcase.]*
@@ -190,6 +194,31 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L2_GRAN_007]` **GRAN** (bark, door fails): "Lazy tongue. Lazy life."
 `[L2_MEOW_003]` **MEOW** (bark): "Mm-hmm!" **(sub)** *"Good posture."*
 `[L2_MEOW_004]` **MEOW** (bark): "Mm. Mm-mm." **(sub)** *"Your chin. Fix your chin."*
+
+### 2.2b The Expander Wall (ortho horror beat)
+
+*[A long gallery lit like a museum. Hundreds of glass jars on shelves. Inside each: a palate expander, labelled with a name and a date. Small brass plaque: THE FORWARD COLLECTION.]*
+
+`[L2_GRAN_018]` **GRAN**: "Ah, my collection. Every one a success story. Well. Most of them."
+`[L2_KEV_009]` **KEV**: "Is that… an expander? Why is it in a jar?"
+*[Kevin turns away. Behind him: click. He turns back. Every expander has turned a quarter turn.]*
+`[L2_KEV_010]` **KEV**: "Why is it *moving?*"
+`[L2_GRAN_019]` **GRAN**: "Quarter turn every night, boy. They don't forget. Even in jars."
+`[L2_KEV_011]` **KEV**: "I had headgear in Year 8. I'm not going back."
+`[L2_MEOW_008]` **MEOW** *(cranks his own expander with a little key, proudly)*: "Mm-hm!" **(sub)** *"Quarter turn!"*
+`[L2_KEV_012]` **KEV**: "Please stop cranking it near me."
+
+*[At the end of the gallery: the Headgear Rack. Dozens of reverse-pull face masks hang like hockey masks in a slasher film. One hook is empty. Its label swings: "PATIENT 0".]*
+`[L2_KEV_013]` **KEV**: "There's one missing."
+`[L2_GRAN_020]` **GRAN**: "Oh, that one never liked the rack."
+*[Far down the tunnel: the creak of rubber bands stretching. A face mask floats into the light, bands pulled taut to the walls. It tilts its empty head.]*
+`[L2_KEV_014]` **KEV** *(whisper)*: "Nope. Rubber bands. I'm out."
+
+**Gameplay:** first **Headgear** stalker section. Kevin must cut its bands with scissors or hide behind pillars. **Expander Spiders** click along the floor.
+`[ORTHO_KEV_001]` **KEV** (bark, Headgear near): "Don't pull. Don't pull. Don't pull."
+`[ORTHO_KEV_002]` **KEV** (bark, Spider latched on): "GET IT OFF MY FACE. MY FACE IS GETTING WIDER."
+`[ORTHO_KEV_003]` **KEV** (bark, Spider shaken off): "Okay. Okay. Normal width."
+`[ORTHO_KEV_004]` **KEV** (bark, picks up mouth tape): "This is a trend, apparently."
 
 ### 2.3 The Lecture Chase (mid-floor set piece)
 
@@ -359,6 +388,18 @@ If the player walks back out of the front door within 60 seconds of the prologue
 **Round 3 — vs. Androjenic.**
 `[L4_ANDR_009]` **ANDR**: "Round three. Me."
 
+### 4.2b The Chair (ortho horror chase)
+
+*[Between rounds, Kevin is sent to a side room. One dental chair under an operating lamp. Wherever he stands, the chair slowly swivels to face him. A tray of orthodontic pliers clinks by itself.]*
+`[L4_KEV_005]` **KEV**: "I'm not sitting in that."
+`[L4_CON_001]` **CON**: "The Chair would like to see you now."
+*[The lamp swings toward Kevin. The chair's wheels unlock. It rolls toward him, slow at first, then fast.]*
+**Gameplay:** short chase through the gallery corridors; slam doors to slow it down; giant facial calipers on the walls snap shut as you pass (QTE dodge).
+`[ORTHO_KEV_005]` **KEV** (bark, chase): "WHY DOES IT HAVE WHEELS."
+`[ORTHO_KEV_006]` **KEV** (bark, calipers snap): "Measured! I got measured!"
+`[L4_ANDR_019]` **ANDR** *(watching from the gallery)*: "Chair: seven. Chase: six. Your scream: a solid eight."
+*[The chair crashes into the courtroom door and folds flat, like it's reclining for a cleaning.]*
+
 ### 4.3 Boss — Androjenic
 
 **Phase 1** (boss music: aggressive orchestral). Androjenic fires "rating beams" from the laser pointer.
@@ -527,6 +568,10 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L7_FRY_002]` **FRY**: "Hunter eyes. Over easy."
 
 ### 7.3 Boss — The Walk-Off
+
+*[The front row of the audience: mannequins wearing cheek retractors and braces, forced into enormous smiles. Brace Face.]*
+`[ORTHO_KEV_007]` **KEV**: "That smile is held open by metal. Nobody's that happy."
+`[L7_FER_005]` **FER**: "Front row. Best seats. They never stop smiling."
 
 **Phase 1 — Walk-off (rhythm):** walk the catwalk on beat; hit poses at the marks. Mannequins hold up scorecards after each pose.
 `[L7_FER_002]` **FER** (bark): "Your walk says 'lost in a supermarket'."
@@ -711,6 +756,8 @@ Target for v1: ~30 per playable character. Below is the starting set; write more
 | Uses Touch Grass | "Going outside. Mentally." |
 | Picks up Jaw Juice (fake item) | "This says 'Jaw Juice'. It's green. I'm not drinking—" *(drinks)* "—okay." |
 | Idle (30 s) | "I could've been asleep." · "I bet the barber's open by now." |
+| Ortho Dread (near orthodontic gear) | "Nope." · "Too many brackets." · "I can hear it tightening." · "Year 8 flashbacks. Year 8 flashbacks." · "Why is everything here a mouth?" |
+| Retainer Chatterers swarm | "They're clacking. Why are they clacking." · "Stomp. Stomp. Sorry. Stomp." |
 
 ### Clavicoolar (`CLAV`)
 | Situation | Lines |
@@ -800,6 +847,8 @@ Play every 2–4 minutes on any floor (not during dialogue). Pick randomly, neve
 | `PA_012` | "Attention: a Chico has been sighted. No, you didn't." |
 | `PA_013` | "Rate your night out of ten. Your answer has been rounded down." |
 | `PA_014` | "The elevator is working. The elevator is judging. These are not mutually exclusive." |
+| `PA_016` | "Reminder: wear your headgear twenty-two hours a day. The other two hours, it wears you." |
+| `PA_017` | "The Forward Collection is now open. Please do not tap on the jars. They tap back." |
 | `PA_015` | "This clinic is a parody. Any resemblance to real people is… honestly, a little concerning." |
 
 ---
@@ -820,6 +869,8 @@ Big title: **NGMI**. Under it, one random line:
 | `DEATH_008` | "Tip: Mouth Breathers can't see. They can hear you panic." |
 | `DEATH_009` | "Your Before Photo says hi." |
 | `DEATH_010` | "Not Gonna Make It. This time." |
+| `DEATH_011` | "Pulled in by the Headgear. Year 8 called." |
+| `DEATH_012` | "Tip: Expander Spiders hate light. So do you, apparently." |
 
 Button labels: **[Try again]** shows as "Re-maxx" · **[Quit]** shows as "Cope".
 

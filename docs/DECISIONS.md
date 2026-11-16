@@ -15,3 +15,5 @@ To change a decision, add a new entry that supersedes the old one (don't delete)
 | D8 | 2026-11-16 | Primary assets: Megascans on Fab, then Poly Haven/ambientCG (CC0) | Megascans free again since 12 Nov 2026; best realistic quality | @devspideyy |
 | D9 | 2026-11-16 | Dr. Mike Meow is the paid hero; paid heroes are side-grades | Monetization without pay-to-win | @devspideyy |
 | D10 | 2026-11-16 | Repo is private on GitHub (devspideyy/ngmi); @rexyysilent is collaborator | Collaboration | @devspideyy |
+| D11 | 2026-11-17 | Repo **public for 7 days** (2026-11-17 → 2026-11-24), then private again. Kept as-is, including the internal "Inspired by" column | Owner's choice; risks (copies/forks persist, real-name mapping visible) were flagged and accepted | @devspideyy |
+| D12 | 2026-11-17 | **Orthodontic horror** is a core fear theme: Kevin's Ortho Dread, the Headgear stalker, Expander Spiders, Retainer Chatterers, Brace Face, The Chair | Owner request; ties to Kevin's Before Photo (braces) | @devspideyy |

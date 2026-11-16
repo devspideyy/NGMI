@@ -30,6 +30,8 @@ Each floor has: a **host** (main NPC), an **objective**, a **gimmick** (the mech
 - **Enemies:** 2–3 Sub-5 Ghouls (slow), Bad Lighting patches.
 - **Boss:** Business Card Duel with Kareem Shammy (compare card textures in a QTE; comedic, can't die).
 - **Secret:** walk straight back out of the front door within 60 s → **Touch Grass** ending.
+- **Ortho horror:** Retainer Lost & Found box (lids snap), first Retainer Chatterers.
+- **Wall jokes:** DETAILS.md §12, Floor 1.
 - **Assets:** modular hospital (Fab), dirty tiles, concrete walls, chairs, reception desk, "ASCENSION CLINIC – NO REFUNDS" neon sign (in-house).
 - **Mood:** fluorescent hum, one flickering green ring light, muzak playing slightly too slow.
 
@@ -41,6 +43,8 @@ Each floor has: a **host** (main NPC), an **objective**, a **gimmick** (the mech
 - **Boss:** Giant Mouth Breather — lure it with thrown objects into steam vents.
 - **Assets:** Fab sewer modular pack (PropHaus) or asylum pack; Megascans brick/wet concrete; rusty pipes.
 - **Mood:** dripping water, distant breathing, green bioluminescent mould.
+- **Ortho horror (main floor for it):** the **Expander Wall** (jars that turn a quarter turn when you look away), the **Headgear Rack** with one empty hook, **Expander Key** doors, first **Headgear** stalker encounter, **Expander Spiders**, mouth-tape pickup.
+- **Wall jokes:** DETAILS.md §12, Floor 2.
 
 ### L3 — Bone Smash Basement (`L_L3_BoneSmashBasement`) ← **first vertical slice**
 - **Purpose:** first real combat floor + the signature gag.
@@ -57,6 +61,8 @@ Each floor has: a **host** (main NPC), an **objective**, a **gimmick** (the mech
 - **Gimmick:** Mog Battles — hold eye contact (keep crosshair on target) while timing button prompts.
 - **Boss:** Androjenic. Phase 2: he rates the boss music 4/10 and it switches genre.
 - **Assets:** Fab mortuary/autopsy environment, asylum pack, operating lamps.
+- **Ortho horror:** **The Chair** (dental chair that turns to face you, then chases you mid-floor), giant facial calipers trap, symmetry-grid projector, Headgear returns.
+- **Wall jokes:** DETAILS.md §12, Floor 4.
 
 ### L5 — Glow-Up Graveyard (`L_L5_GlowUpGraveyard`)
 - **Purpose:** darkness + light-as-resource.

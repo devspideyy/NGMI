@@ -34,7 +34,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Passive – Mid Energy:** monsters ignore him 30% of the time.
 - **Perk – No Gimmick:** can use every Maxx item.
 - **Ultimate – Touch Grass:** once per run, leaves reality for 5 s, full heal. NPCs: "He… went outside?"
-- **Weakness:** bosses forget his name mid-monologue.
+- **Weakness:** bosses forget his name mid-monologue. **Ortho Dread:** terrified of orthodontic gear (had braces + headgear in Year 8); near it, his rating drains.
 - **Signature line:** "Bro, I just wanted a haircut."
 - **Visual:** grey hoodie, average everything, slightly confused face. First-person hands: bitten nails, cheap watch.
 - **Voice:** deadpan, tired, mid-20s.

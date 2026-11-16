@@ -70,6 +70,7 @@ Moment-to-moment: first-person movement, flashlight, interact, crouch, sprint, o
 - Standing in **Bad Lighting** slowly drains rating; standing under a ring light slowly restores it (cap 7.0 from lighting alone).
 - Pickups: skincare (+0.5), water bottle (+0.25), "Jaw Juice" (fake item, +1.0 for 10 s then −0.5 crash).
 - At **0** you become a **Sub-5 Ghoul**. Solo: run ends. Co-op: you haunt teammates (slow them, block light) until revived at a mirror.
+- **Ortho Dread:** Kevin had braces and headgear as a kid. Near orthodontic horrors (expanders, headgear, retainers, cheek retractors) his screen edges pinch, breathing quickens and rating drains −0.05/s. See [DETAILS.md](DETAILS.md) §13.
 - Rating at escape decides the ending (see [SCRIPT.md](SCRIPT.md) → Endings).
 
 UI: a minimalist number top-left with a tiny face icon that gets more "mid" as rating drops. Rating changes pop as "+0.5 GLOW" / "−1.0 MOGGED".
@@ -121,6 +122,10 @@ Eight monster types, each a horror version of a looksmaxxing fear, each with one
 | **Recessed Chin Crawler** | Hangs on the ceiling, drops on you | Look up; flashlight scares it | −0.75 |
 | **Mirror Self** | Your reflection; moves only when you look away | Keep eyes on it while backing off | −1.0 |
 | **Before Photo** | Your old self, haunting Level 5 | Out-glow it: Glow-Up or Smile Flash | −0.5 |
+| **The Headgear** | Floating reverse-pull face mask; its rubber bands pull you toward it. Recurring stalker (L2, L4, L8) | Cut the bands (scissors); hide behind pillars | −0.5 + pull |
+| **Expander Spiders** | Expander-shaped crawlers; latch onto your face and stretch your FOV wider and wider | Mash to shake off; flashlight scatters them | −0.25/s latched |
+| **Retainer Chatterers** | Chattering clear retainers; harmless alone, nibble in swarms; drawn to noise | Stomp; throw something to lure them | −0.1 each |
+| **Brace Face** | Mannequins in cheek retractors; move when unobserved, smile widens each time | Keep them in view | −0.75 |
 | **The Front Camera** | Elite stalker phone; if it catches you, plays your worst-angle jumpscare and halves your rating | Never face it directly; it is the final boss | ×0.5 |
 
 ---
