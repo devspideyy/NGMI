@@ -91,7 +91,8 @@ ngmi/
 │   ├── GAME_DESIGN.md         ← full GDD: concept, player, cast, enemies, levels, script, systems
 │   ├── CHARACTERS.md          ← every character: role, gimmick, abilities, lines, code IDs
 │   ├── LEVELS.md              ← all 8 floors in detail, with UE5 build notes
-│   ├── SCRIPT.md              ← opening cutscene, boss intros, endings (dialogue)
+│   ├── SCRIPT.md              ← full campaign script with line IDs: prologue, 8 floors, endings, barks
+│   ├── DETAILS.md             ← little details: UI, audio, easter eggs, achievements (cost + priority)
 │   ├── ASSETS.md              ← asset sourcing list for UE5 realistic (what to get, from where, license)
 │   ├── ART_DIRECTION.md       ← lighting, colour grade, materials, reference values
 │   ├── MONETIZATION.md        ← what is sold, rules for fairness
@@ -117,6 +118,7 @@ The UE5 project itself does not exist yet. When it is created it goes in `/Game/
 | --- | --- |
 | Understand the whole game | [docs/GAME_DESIGN.md](docs/GAME_DESIGN.md) |
 | Write dialogue, barks, or a character | [docs/CHARACTERS.md](docs/CHARACTERS.md) + [docs/SCRIPT.md](docs/SCRIPT.md) |
+| Add polish, jokes, easter eggs, achievements | [docs/DETAILS.md](docs/DETAILS.md) |
 | Build or block out a level | [docs/LEVELS.md](docs/LEVELS.md) + [docs/ART_DIRECTION.md](docs/ART_DIRECTION.md) |
 | Find or buy assets | [docs/ASSETS.md](docs/ASSETS.md) |
 | Check if a joke, name or asset is allowed | [docs/LEGAL.md](docs/LEGAL.md) |

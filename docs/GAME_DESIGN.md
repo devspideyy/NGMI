@@ -25,11 +25,22 @@ NGMI is a 1–4 player first-person horror-comedy in Unreal Engine 5. You are tr
 - Fantasy: an ordinary person surviving an absurd, scary world of beauty-obsessed weirdos, and being the only one with common sense.
 - Short-term goal: get through the current floor alive.
 - Mid-term goal: beat the floor's boss and pick an upgrade.
-- Long-term goal: reach the Exit Mirror, unlock all 11 characters, see all 4 endings.
+- Long-term goal: reach the Exit Mirror, unlock all 11 characters, see all 5 endings (one secret).
 
 ---
 
-## 3. Structure and length
+## 3. Story
+
+Theme: **the obsession is the real horror.** Every boss is trapped chasing a number; Kevin wins by caring less than they do.
+
+- **Villain:** the **Concierge**, the clinic's cheerful AI voice on every PA speaker. It rates you, sells to you, and keeps sending the elevator *down*. On Floor 8 it is revealed to be the Front Camera. Motive: "Nobody ever leaves a mirror. That's engagement."
+- **Kevin's goal:** he just wanted a haircut. Opens the game, pays off in the post-credits barbershop scene.
+- **Allies:** each boss becomes an ally; all of them return (in spa robes) for the final fight.
+- **Endings:** Ascend (9+), Cope (<4), Jester (20+ laughs), Fine (everything else), and the secret Touch Grass.
+
+Full scene-by-scene script with line IDs: [SCRIPT.md](SCRIPT.md). Small touches: [DETAILS.md](DETAILS.md).
+
+## 3b. Structure and length
 
 | Mode | Structure | Length |
 | --- | --- | --- |
@@ -136,7 +147,7 @@ More can be added; each must be one sentence and one number.
 - **Random clinic** (Night Shift mode): floors built from shuffled room tiles; floors 3–7 in random order.
 - **Daily Face:** one global rule per day (e.g. *Bad Lighting Night*: half the lamps off; *Mirror Tuesday*: double mirrors).
 - **11 playable characters**, each needs a different route (tank, stealth, support, scout, DPS).
-- **4 endings + collectibles:** 50 hidden Before Photos; Chico sightings (1 in 50 runs).
+- **5 endings (one secret) + collectibles:** 50 hidden Before Photos; Chico sightings (1 in 50 runs).
 - **Co-op 1–4** with friendly mogging on: teammates can lower each other's rating.
 - **Ascension levels 1–10:** harder runs that unlock jaw and hammer skins.
 

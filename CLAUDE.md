@@ -54,7 +54,8 @@ Bad: anything that names a real person or mocks a real person's appearance.
 | Whole design | `docs/GAME_DESIGN.md` |
 | Characters, abilities, lines, code IDs | `docs/CHARACTERS.md` |
 | Floors / level design | `docs/LEVELS.md` |
-| Dialogue / cutscenes / endings | `docs/SCRIPT.md` |
+| Dialogue / cutscenes / endings (line IDs = VO file names) | `docs/SCRIPT.md` |
+| Small touches, easter eggs, achievements | `docs/DETAILS.md` |
 | Assets to get, licenses | `docs/ASSETS.md` |
 | Look & lighting values | `docs/ART_DIRECTION.md` |
 | Paid content rules | `docs/MONETIZATION.md` |

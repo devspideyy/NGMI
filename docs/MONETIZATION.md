@@ -4,7 +4,7 @@ Principle: **sell fun and flex, never block content.** Every level is beatable w
 
 | Item | Type | What you get | Price |
 | --- | --- | --- | --- |
-| Base game | One-time | All 8 floors, 10 free characters, 4 endings | TBD |
+| Base game | One-time | All 8 floors, 10 free characters, 5 endings | TBD |
 | **Dr. Mike Meow Hero Pack** | One-time | Paid hero: Palate Expander, MSX Mode, Jaw Forward, mewing voice pack | TBD |
 | Jaw skins | Cosmetic | Diamond Jaw, Cardboard Jaw, Chrome Jaw | TBD |
 | Hammer skins | Cosmetic | Rubber Chicken Hammer, Gold Gavel | TBD |
