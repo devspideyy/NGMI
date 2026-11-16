@@ -56,6 +56,7 @@ Bad: anything that names a real person or mocks a real person's appearance.
 | Floors / level design | `docs/LEVELS.md` |
 | Dialogue / cutscenes / endings (line IDs = VO file names) | `docs/SCRIPT.md` |
 | Small touches, easter eggs, achievements | `docs/DETAILS.md` |
+| Jump scares (IDs match ⚡JS_xx in the script) | `docs/JUMPSCARES.md` |
 | Assets to get, licenses | `docs/ASSETS.md` |
 | Look & lighting values | `docs/ART_DIRECTION.md` |
 | Paid content rules | `docs/MONETIZATION.md` |

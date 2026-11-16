@@ -1,6 +1,8 @@
 # NGMI — Characters
 
-Every character: who they are, how they play, what they say. Use the **Code ID** everywhere in Unreal (Data Tables, Blueprints, save keys, localisation keys).
+Every character: who they are, how they play, what they say.
+
+**Story structure (D13):** five **allies** each give Kevin one **power** after a moment of trust, then join his phone group chat (GLOW UP GANG). Four **influencer bosses** are *hooked* by the Concierge; beating them frees them, they leave with a funny line, and they return to help in the finale. In the story you always play Kevin. Every character below is **playable in replay modes** (Night Shift, Floor Replay) with the full kit listed in their sheet. Use the **Code ID** everywhere in Unreal (Data Tables, Blueprints, save keys, localisation keys).
 
 > **Parody rule.** Player-facing content uses only the **Game name**. The "Inspired by" column is internal reference for the team and must never appear in the game, store page, trailers, or tags. See [LEGAL.md](LEGAL.md).
 
@@ -8,20 +10,20 @@ Every character: who they are, how they play, what they say. Use the **Code ID**
 
 ## Roster at a glance
 
-| Game name | Code ID | Inspired by (internal only) | Known for | Story role | Playstyle |
-| --- | --- | --- | --- | --- | --- |
-| Kevin "Mid" Averageface | `kevin_mid` | Original character | The player, a 5/10 normie | Player | All-rounder |
-| Clavicoolar | `clavicoolar` | Clavicular (Braden Peters), streamer | "King of looksmaxxing" | L3 ally → playable | Tank |
-| Kareem Shammy ("Skincare Psycho") | `kareem_shammy` | Kareem Shami (@syrianpsycho) | "Godfather of looksmaxxing", skincare | L1 tutorial guide | Support |
-| Androjenic | `androjenic` | Androgenic, streamer | Hardmaxxing, harsh face ratings | L4 boss → playable | Scout |
-| Baby Stinkley | `baby_stinkley` | Baby Stickley | Viral before/after glow-up | L5 NPC → playable | Stealth |
-| Oliver Forsmile | `oliver_forsmile` | Oliver Forslin | Before/after transformation | L5 co-star | Support |
-| Dylan Lathered | `dylan_lathered` | Dillon Latham | TikTok looksmaxxer | L6 boss → ally | Mobility |
-| **Dr. Mike Meow** (PAID) | `dr_meow` | Mike Mew, orthodontist | Mewing, jaw theory | Premium hero | Tank + control |
-| Grandpa Jon Meow | `grandpa_meow` | John Mew | Started the theory | Hub NPC, quests | Secret unlock |
-| Chico Lackjawski | `chico_lackjawski` | Chico Lachowski, model | The ideal face | Cryptid, 1 in 50 runs | Secret unlock |
-| Jordan Ferret | `jordan_ferret` | Jordan Barrett, model | Model | L7 boss → playable | Infiltrator |
-| Sean O'Fry | `sean_ofry` | Sean O'Pry, model | Model, "hunter eyes" | L7 boss duo → playable | DPS |
+| Game name | Code ID | Inspired by (internal only) | Known for | Story role | Gives Kevin | Playstyle (replay) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Kevin "Mid" Averageface | `kevin_mid` | Original character | The player, a 5/10 normie | Player | — | All-rounder |
+| Clavicoolar | `clavicoolar` | Clavicular (Braden Peters), streamer | "King of looksmaxxing" | **F3 ally** | Bone Smash | Tank |
+| Kareem Shammy ("Skincare Psycho") | `kareem_shammy` | Kareem Shami (@syrianpsycho) | "Godfather of looksmaxxing", skincare | **F1 ally** (tutorial guide) | Routine Combo | Support |
+| Androjenic | `androjenic` | Androgenic, streamer | Hardmaxxing, harsh face ratings | **F4 boss** (hooked → freed) | — | Scout |
+| Baby Stinkley | `baby_stinkley` | Baby Stickley | Viral before/after glow-up | **F5 ally** | Before Form | Stealth |
+| Oliver Forsmile | `oliver_forsmile` | Oliver Forslin | Before/after transformation | **F5 ally** | Smile Flash | Support |
+| Dylan Lathered | `dylan_lathered` | Dillon Latham | TikTok looksmaxxer | **F6 boss** (hooked → freed) | — | Mobility |
+| **Dr. Mike Meow** (PAID) | `dr_meow` | Mike Mew, orthodontist | Mewing, jaw theory | **F2 ally** · paid hero in replay | Silent Mewing | Tank + control |
+| Grandpa Jon Meow | `grandpa_meow` | John Mew | Started the theory | Tannoy voice F2, quests, gum | Grandpa's Gum (item) | Secret unlock |
+| Chico Lackjawski | `chico_lackjawski` | Chico Lachowski, model | The ideal face | Cryptid, 1 in 50 runs | — | Secret unlock |
+| Jordan Ferret | `jordan_ferret` | Jordan Barrett, model | Model | **F7 boss** (hooked → freed) | — | Infiltrator |
+| Sean O'Fry | `sean_ofry` | Sean O'Pry, model | Model, "hunter eyes" | **F7 boss** (hooked → freed) | — | DPS |
 
 ---
 
@@ -40,7 +42,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** deadpan, tired, mid-20s.
 
 ### Clavicoolar — `clavicoolar`
-- **Role:** Level 3 ally, then playable. Trapped in the Bone Smash Basement by a squad of headshot snipers.
+- **Role:** F3 ally. Trapped in a cage by Mid Management's snipers. **Gives Kevin Bone Smash** after Kevin frees him and bonks himself once.
 - **Gimmick:** bone smashing, mogging stare.
 - **Active – Bone Smash:** hits his own face with a hammer. For 20 s headshots do 0 damage and bullets bounce off with a **"TOO MUCH BONE"** ping (slow-mo + sound sting). Cartoon slapstick only.
 - **Ultimate – Ascend:** floats in green light; every enemy in view kneels, mogged, stunned 6 s.
@@ -50,7 +52,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** calm, confident, monotone; treats everything as a rating.
 
 ### Kareem Shammy ("Skincare Psycho") — `kareem_shammy`
-- **Role:** Level 1 tutorial guide. Appears in a robe and sheet mask.
+- **Role:** F1 ally and tutorial guide; appears in a robe and sheet mask. **Gives Kevin Routine Combo** after the skincare test and the Business Card Duel. Creates the GLOW UP GANG group chat.
 - **Gimmick:** the 13-step routine; business-card duel energy.
 - **Active – Routine Combo:** player inputs a 4-step combo (cleanse, tone, serum, SPF). Right order = big buff; wrong order = face goes red, −1 rating.
 - **Ultimate – Halo Effect:** so pretty that allies within 10 m heal and enemies forget why they were angry.
@@ -60,7 +62,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** smooth, intense, over-precise.
 
 ### Androjenic — `androjenic`
-- **Role:** Level 4 boss, then playable.
+- **Role:** F4 boss, **hooked** through a green earpiece that feeds him numbers. Freed when Kevin rates *him* a 7; leaves to "rate a sunset"; returns in the finale.
 - **Gimmick:** brutal face ratings.
 - **Active – Rate:** scans an enemy and shows its number; anything under 3.0 cries and despawns.
 - **Ultimate – Brutal Honesty:** rates the whole room; every enemy is stunned by the insult.
@@ -70,7 +72,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** clinical, bored, judgmental.
 
 ### Baby Stinkley — `baby_stinkley`
-- **Role:** Level 5 NPC, then playable.
+- **Role:** F5 ally. Has been following Kevin since F1 unnoticed. **Gives Kevin Before Form** because Kevin is the first person who ever noticed him.
 - **Gimmick:** before/after glow-up.
 - **Active – Form Swap:** Before form is invisible (nobody notices him); After form hits hard but is loud.
 - **Ultimate – Glow-Up:** dramatic transformation cutscene; his Before Photo ghost fights for the team.
@@ -80,7 +82,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** shy in Before, loud in After.
 
 ### Oliver Forsmile — `oliver_forsmile`
-- **Role:** Level 5 co-star.
+- **Role:** F5 ally. **Gives Kevin Smile Flash** after Kevin keeps coffee away from him through the dark graveyard.
 - **Gimmick:** blinding smile.
 - **Active – Smile Flash:** his teeth are the team's flashlight; stuns Ghouls.
 - **Ultimate – Veneer Nova:** one smile so bright it clears the room.
@@ -90,7 +92,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** cheerful, always smiling (audible in the voice).
 
 ### Dylan Lathered — `dylan_lathered`
-- **Role:** Level 6 boss, then ally.
+- **Role:** F6 boss, **hooked** through the foam hose in his backpack. Freed when the hose is cut; leaves robes for Kevin's friends; returns in the finale.
 - **Gimmick:** skincare foam.
 - **Active – Lather:** foams the floor; team slides fast, enemies slip.
 - **Ultimate – Triple Cleanse Bubble:** foam bubble shield around the team.
@@ -100,7 +102,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Voice:** spa-relaxed, suddenly aggressive about skincare.
 
 ### Dr. Mike Meow — `dr_meow` — PAID HERO
-- **Role:** premium playable hero.
+- **Role:** F2 ally. **Gives Kevin Silent Mewing** after Kevin follows him across the Mouth Breather nest without a sound. In replay modes he is the **paid hero** with the full kit below.
 - **Gimmick:** mewing, MSX (parody of MSE, a palate expander), jaw theory.
 - **Passive – Silent Mewing:** tongue on roof of mouth = invisible to Mouth Breathers.
 - **Active 1 – Palate Expander:** cranks a key; face widens; shockwave knockback.
@@ -114,7 +116,7 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Fairness:** side-grade, not pay-to-win (see [MONETIZATION.md](MONETIZATION.md)).
 
 ### Grandpa Jon Meow — `grandpa_meow`
-- **Role:** hub NPC; lore and side quests.
+- **Role:** voice on the F2 tannoy (never seen in person); lore, side quests, gives Kevin the 40 kg gum used in the finale.
 - **Active – Lecture:** gives one quest per run ("chew this 40 kg gum").
 - **Ultimate – Original Theory** (secret unlock after 10 quests): resets every face in the room to factory settings.
 - **Weakness:** rants 10 s before every action.
@@ -131,14 +133,14 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 - **Visual:** soft god-light follows him; always slightly out of focus (depth of field), like a Bigfoot photo.
 
 ### Jordan Ferret — `jordan_ferret`
-- **Role:** Level 7 boss, then playable.
+- **Role:** F7 boss, **hooked** by the Concierge's stage lights. Freed when the lights die; returns in the finale.
 - **Active – Vent Crawl:** squeezes through vents; Model Stare freezes one enemy.
 - **Ultimate – Catwalk:** walks in slow motion; every bullet misses.
 - **Weakness:** chases anything shiny.
 - **Signature line:** "Walk with me. Or under me. I'm in the vents."
 
 ### Sean O'Fry — `sean_ofry`
-- **Role:** Level 7 boss duo, then playable.
+- **Role:** F7 boss, **hooked** by the stage lights. Freed by the sandwich walk; returns in the finale.
 - **Active – Hunter Eyes:** sees enemies through walls; eye lasers fry them.
 - **Ultimate – Deep Fry Stare:** cooks every enemy in a cone, with sizzle sound.
 - **Weakness:** if he blinks, powers off for 10 s.
@@ -146,17 +148,30 @@ Format for each: **Role · Gimmick · Active · Ultimate · Passive (if any) · 
 
 ---
 
-## Unlock conditions
+## Kevin's earned powers (story)
+
+| Power | From | Earned when | Effect (starting values) | Cooldown |
+| --- | --- | --- | --- | --- |
+| **Routine Combo** | Kareem Shammy, F1 | Passes the skincare test + card duel | 4-button combo; right = +1.0 rating and +25% speed 15 s; wrong = −1.0 | 30 s |
+| **Silent Mewing** | Dr. Mike Meow, F2 | Crosses the Mouth Breather nest silently | Hold: make no sound at all (drains stamina) | — |
+| **Bone Smash** | Clavicoolar, F3 | Frees him, bonks himself once | 20 s headshot immunity; head hits PING off | 45 s |
+| **Smile Flash** | Oliver Forsmile, F5 | Keeps coffee off him in the dark | Cone of light; stuns Ghouls 3 s | 8 s |
+| **Before Form** | Baby Stinkley, F5 | Notices him | 6 s invisible; can't attack | 25 s |
+| **Touch Grass** (ultimate) | Kevin's own | Start | Leave reality 5 s, full heal | Once per run |
+
+Controls: powers on 1–5 (or a radial wheel on gamepad), ultimate on Q.
+
+## Unlock conditions (replay modes)
 
 | Character | Unlock |
 | --- | --- |
 | Kevin | Start |
 | Kareem Shammy | Finish Level 1 |
-| Clavicoolar | Rescue him in Level 3 |
+| Clavicoolar | Rescue him on F3 |
 | Androjenic | Beat him in Level 4 |
 | Baby Stinkley, Oliver Forsmile | Finish Level 5 |
 | Dylan Lathered | Beat him in Level 6 |
 | Jordan Ferret, Sean O'Fry | Beat them in Level 7 |
 | Grandpa Jon Meow | Complete 10 of his quests |
 | Chico Lackjawski | Screenshot him 3 times |
-| Dr. Mike Meow | Paid hero pack |
+| Dr. Mike Meow | Paid hero pack (he is a free ally in the story) |

@@ -35,7 +35,8 @@ Theme: **the obsession is the real horror.** Every boss is trapped chasing a num
 
 - **Villain:** the **Concierge**, the clinic's cheerful AI voice on every PA speaker. It rates you, sells to you, and keeps sending the elevator *down*. On Floor 8 it is revealed to be the Front Camera. Motive: "Nobody ever leaves a mirror. That's engagement."
 - **Kevin's goal:** he just wanted a haircut. Opens the game, pays off in the post-credits barbershop scene.
-- **Allies:** each boss becomes an ally; all of them return (in spa robes) for the final fight.
+- **Allies and bosses (D13):** 5 influencers are **allies** who each give Kevin a **power** after a moment of trust, then join his phone group chat (GLOW UP GANG). 4 influencers are **bosses**, *hooked* by the Concierge; beating them frees them. The other bosses are **monsters** (Brenda, Giant Mouth Breather, Before Photo, Front Camera) plus the Headhunter Squad. Allies and freed bosses all return for the finale.
+- **Jump scares:** 22 placed scares, each followed by a laugh. See [JUMPSCARES.md](JUMPSCARES.md).
 - **Endings:** Ascend (9+), Cope (<4), Jester (20+ laughs), Fine (everything else), and the secret Touch Grass.
 
 Full scene-by-scene script with line IDs: [SCRIPT.md](SCRIPT.md). Small touches: [DETAILS.md](DETAILS.md).
@@ -82,6 +83,7 @@ UI: a minimalist number top-left with a tiny face icon that gets more "mid" as r
 - 5/10 normie who clicked an ad for a "free jawline consultation".
 - **Passive – Mid Energy:** monsters ignore him 30% of the time (too forgettable to hunt).
 - **Perk – No Gimmick:** the only character who can use every Maxx item.
+- **Earned powers (story):** Routine Combo (Kareem, F1) · Silent Mewing (Dr. Meow, F2) · Bone Smash (Clavicoolar, F3) · Smile Flash (Oliver, F5) · Before Form (Baby Stinkley, F5). Numbers in [CHARACTERS.md](CHARACTERS.md) → Kevin's earned powers.
 - **Ultimate – Touch Grass:** once per run, steps outside reality for 5 s and fully heals. NPCs gasp: "He… went outside?"
 - **Weakness:** zero hype. Every boss starts a monologue, then forgets his name mid-sentence.
 - Voice: deadpan. First line: "Bro, I just wanted a haircut."
@@ -91,21 +93,21 @@ UI: a minimalist number top-left with a tiny face icon that gets more "mid" as r
 
 ## 7. Cast summary
 
-Eleven characters. Each starts as an NPC or boss and unlocks as playable after you beat or help them. Dr. Mike Meow is the paid hero. Full sheets in [CHARACTERS.md](CHARACTERS.md).
+Eleven characters: 5 allies (give Kevin powers), 4 influencer bosses (hooked, then freed), Grandpa (voice + gum) and Chico (cryptid). In the story you play Kevin; every character is playable in replay modes once unlocked. Dr. Mike Meow is a free ally in the story and the paid hero in replay. Full sheets in [CHARACTERS.md](CHARACTERS.md).
 
-| Character | Story role | Playstyle |
-| --- | --- | --- |
-| Clavicoolar | L3 ally | Tank |
-| Kareem Shammy | L1 tutorial guide | Support |
-| Androjenic | L4 boss | Scout |
-| Baby Stinkley | L5 NPC | Stealth |
-| Oliver Forsmile | L5 co-star | Support (light source) |
-| Dylan Lathered | L6 boss → ally | Mobility |
-| Dr. Mike Meow (PAID) | Premium hero | Tank + control |
-| Grandpa Jon Meow | Hub NPC, quests | Secret unlock |
-| Chico Lackjawski | Cryptid (1 in 50 runs) | Secret unlock |
-| Jordan Ferret | L7 boss | Infiltrator |
-| Sean O'Fry | L7 boss duo | DPS |
+| Character | Story role | Gives Kevin | Playstyle (replay) |
+| --- | --- | --- | --- |
+| Clavicoolar | F3 ally | Bone Smash | Tank |
+| Kareem Shammy | F1 ally (guide) | Routine Combo | Support |
+| Androjenic | F4 boss (hooked) | — | Scout |
+| Baby Stinkley | F5 ally | Before Form | Stealth |
+| Oliver Forsmile | F5 ally | Smile Flash | Support (light source) |
+| Dylan Lathered | F6 boss (hooked) | — | Mobility |
+| Dr. Mike Meow | F2 ally; paid hero in replay | Silent Mewing | Tank + control |
+| Grandpa Jon Meow | F2 tannoy voice, quests | Gum (item) | Secret unlock |
+| Chico Lackjawski | Cryptid (1 in 50 runs) | — | Secret unlock |
+| Jordan Ferret | F7 boss (hooked) | — | Infiltrator |
+| Sean O'Fry | F7 boss (hooked) | — | DPS |
 
 ---
 
@@ -129,6 +131,19 @@ Eight monster types, each a horror version of a looksmaxxing fear, each with one
 | **The Front Camera** | Elite stalker phone; if it catches you, plays your worst-angle jumpscare and halves your rating | Never face it directly; it is the final boss | ×0.5 |
 
 ---
+
+## 8b. Bosses
+
+| Floor | Boss | Type | How you beat it |
+| --- | --- | --- | --- |
+| F1 | **Brenda**, the skeleton receptionist | Monster | Survive her flicker-teleports and REJECTED stamps; ring the NOW SERVING bell and let her go first |
+| F2 | Giant Mouth Breather | Monster | Lure it onto steam vents; Silent Mewing to reach them |
+| F3 | Headhunter Squad | Human goons | Bone Smash makes headshots useless until they quit |
+| F4 | Androjenic | Influencer (hooked) | Survive rating beams through three music phases; destroy the earpiece; rate him a 7 |
+| F5 | Your Before Photo | Monster | Out-glow it with Smile Flash; slip its photos with Before Form |
+| F6 | Dylan Lathered | Influencer (hooked) | Slide, survive the flood, cut his foam hose |
+| F7 | Jordan Ferret + Sean O'Fry | Influencers (hooked) | Walk-off, then the sandwich walk makes O'Fry blink |
+| F8 | The Front Camera (the Concierge) | Final boss | Aim via mirrors, everyone assists, gum on the lens, flip to rear camera |
 
 ## 9. Upgrades ("Maxxes") — pick 1 of 3 after each floor
 

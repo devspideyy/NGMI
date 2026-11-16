@@ -16,7 +16,10 @@
 - [ ] Flashlight with sway + battery
 - [ ] Enemy: Sub-5 Ghoul (AI: wander, chase, mog on touch)
 - [ ] Enemy: Double Chin Blob (splits on hit)
-- [ ] Clavicoolar NPC rescue + Bone Smash ability (headshot immunity 20 s, "TOO MUCH BONE" slow-mo + SFX)
+- [ ] Clavicoolar rescue + power gift: Kevin gains **Bone Smash** (headshot immunity 20 s, "TOO MUCH BONE" slow-mo + SFX)
+- [ ] Power system: slots 1–5, cooldowns, HUD icons (Bone Smash is the first one built)
+- [ ] Group-chat pop-up (GLOW UP GANG) with 3 test texts
+- [ ] Jump scares JS_07, JS_08, JS_09 working with the photosensitivity/jump-scare settings
 - [ ] Headhunter Squad boss (4 snipers, laser sights, quit animation)
 - [ ] Greybox Bone Smash Basement, then dress with Megascans
 - [ ] Playtest: 15 min, the gag clip reads in under 15 s

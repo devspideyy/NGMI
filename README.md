@@ -43,7 +43,7 @@
 | **Tone** | Every character treats jawlines as life or death. The joke is how serious they are |
 | **Setting** | *The Ascension Clinic*: an abandoned 24/7 looksmaxxing clinic, rusty, flooded with green ring-light glow. Neon sign: "ASCENSION CLINIC – NO REFUNDS" |
 | **Goal** | Reach the **Exit Mirror** on the top floor before 6:00 AM without your **Face Rating** hitting 0 |
-| **Cast** | 11 parody characters inspired by looksmaxxing influencers, with **changed names** (e.g. Clavicoolar, Kareem Shammy, Dr. Mike Meow) |
+| **Cast** | 11 parody characters inspired by looksmaxxing influencers, with **changed names** (e.g. Clavicoolar, Kareem Shammy, Dr. Mike Meow). 5 are allies who give Kevin powers; 4 are bosses, hooked by the clinic and freed when beaten |
 | **Signature gag** | Clavicoolar bone-smashes his own face with a hammer; for 20 s headshots do 0 damage and bullets bounce off with a "TOO MUCH BONE" ping |
 | **Business** | Paid base game + paid hero (Dr. Mike Meow) + cosmetics + seasonal pass. Paid heroes are side-grades, never pay-to-win |
 | **Virality** | Shareable Rating Cards, one-key clips ("Mog Cam"), Twitch/Kick chat-controlled scares, mic-reactive monsters, rare "Chico" cryptid sightings |
@@ -92,7 +92,8 @@ ngmi/
 │   ├── CHARACTERS.md          ← every character: role, gimmick, abilities, lines, code IDs
 │   ├── LEVELS.md              ← all 8 floors in detail, with UE5 build notes
 │   ├── SCRIPT.md              ← full campaign script with line IDs: prologue, 8 floors, endings, barks
-│   ├── DETAILS.md             ← little details: UI, audio, easter eggs, achievements (cost + priority)
+│   ├── DETAILS.md             ← little details: UI, audio, wall jokes, ortho horror, easter eggs, achievements
+│   ├── JUMPSCARES.md          ← all 22 jump scares: trigger, scare, the laugh after
 │   ├── ASSETS.md              ← asset sourcing list for UE5 realistic (what to get, from where, license)
 │   ├── ART_DIRECTION.md       ← lighting, colour grade, materials, reference values
 │   ├── MONETIZATION.md        ← what is sold, rules for fairness
@@ -119,6 +120,7 @@ The UE5 project itself does not exist yet. When it is created it goes in `/Game/
 | Understand the whole game | [docs/GAME_DESIGN.md](docs/GAME_DESIGN.md) |
 | Write dialogue, barks, or a character | [docs/CHARACTERS.md](docs/CHARACTERS.md) + [docs/SCRIPT.md](docs/SCRIPT.md) |
 | Add polish, jokes, easter eggs, achievements | [docs/DETAILS.md](docs/DETAILS.md) |
+| Place or tune a jump scare | [docs/JUMPSCARES.md](docs/JUMPSCARES.md) |
 | Build or block out a level | [docs/LEVELS.md](docs/LEVELS.md) + [docs/ART_DIRECTION.md](docs/ART_DIRECTION.md) |
 | Find or buy assets | [docs/ASSETS.md](docs/ASSETS.md) |
 | Check if a joke, name or asset is allowed | [docs/LEGAL.md](docs/LEGAL.md) |

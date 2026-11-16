@@ -11,7 +11,7 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 ## How to read this
 
 - **`[L3_CLAV_012]`** = a line ID. Use it as the audio file name and the localisation key in UE5 (`VO_L3_CLAV_012`). Format: `<scene>_<speaker>_<number>`.
-- Speaker codes: `KEV` Kevin · `CON` the Concierge (clinic voice) · `KAR` Kareem Shammy · `CLAV` Clavicoolar · `ANDR` Androjenic · `STINK` Baby Stinkley · `OLI` Oliver Forsmile · `DYL` Dylan Lathered · `MEOW` Dr. Mike Meow · `GRAN` Grandpa Jon Meow · `FER` Jordan Ferret · `FRY` Sean O'Fry · `HH` Headhunter · `BP` Before Photo · `MANQ` mannequin.
+- Speaker codes: `KEV` Kevin · `CON` the Concierge (clinic voice) · `BREN` Brenda · `TXT` group-chat text (shown on Kevin's phone, not voiced) · `KAR` Kareem Shammy · `CLAV` Clavicoolar · `ANDR` Androjenic · `STINK` Baby Stinkley · `OLI` Oliver Forsmile · `DYL` Dylan Lathered · `MEOW` Dr. Mike Meow · `GRAN` Grandpa Jon Meow · `FER` Jordan Ferret · `FRY` Sean O'Fry · `HH` Headhunter · `BP` Before Photo · `MANQ` mannequin.
 - *Italics in brackets* = stage directions / what the player sees.
 - **(sub)** = subtitle only, no voice (used for Dr. Meow's hums and Chico).
 - **(bark)** = can repeat during gameplay; **(once)** = plays one time per save.
@@ -21,24 +21,48 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 
 ## Story spine
 
-**Theme:** the obsession is the real horror. Every boss is someone trapped by chasing a number. Kevin wins by not caring as much as they do.
+**Theme:** the obsession is the real horror. Every boss is trapped chasing a number. Kevin wins by caring less than they do.
 
 **Villain:** **the Concierge**, the clinic's cheerful AI voice. It talks through ceiling speakers on every floor, rates you constantly, and sells you things. On Floor 8 it is revealed to *be* the Front Camera. Its motive: "Nobody ever leaves a mirror. That's engagement."
 
 **Kevin's goal, in his words:** he just wanted a haircut. That line opens the game and pays off in the post-credits scene.
+
+### Allies, bosses and powers
+
+The influencers are split in two:
+
+- **Allies (5)** help Kevin. Each one gives him a **power** after a specific moment of trust, then joins his phone group chat, **GLOW UP GANG**, and keeps texting hints and jokes for the rest of the game. They come back in person for the finale.
+- **Influencer bosses (4)** are **hooked**: the Concierge feeds their obsession through an earpiece, a clipboard, foam pipes or stage lights. Beating them **frees** them. They get one funny line and leave, then return to help in the finale.
+- **Monster bosses (4) + the Headhunters** are pure horror: Brenda, the Giant Mouth Breather, your Before Photo, and the Front Camera.
+
+| Floor | Ally → power Kevin earns | How he earns it | Boss |
+| --- | --- | --- | --- |
+| F1 | Kareem Shammy → **Routine Combo** (heal + speed) | Passes the skincare test and the card duel | **Brenda** (monster) |
+| F2 | Dr. Mike Meow → **Silent Mewing** (total silence) | Follows Meow through the Mouth Breather nest without a sound | **Giant Mouth Breather** (monster) |
+| F3 | Clavicoolar → **Bone Smash** (headshot immunity) | Frees him from the cage and bonks himself once | **Headhunter Squad** |
+| F4 | — | — | **Androjenic** (hooked influencer) |
+| F5 | Oliver Forsmile → **Smile Flash** (light + stun) · Baby Stinkley → **Before Form** (invisibility) | Keeps coffee away from Oliver in the dark · Is the first person who ever noticed Stinkley | **Your Before Photo** (monster) |
+| F6 | — | — | **Dylan Lathered** (hooked influencer) |
+| F7 | — | — | **Jordan Ferret + Sean O'Fry** (hooked influencers) |
+| F8 | Everyone returns: allies + freed bosses + Grandpa's gum | — | **The Front Camera** (the Concierge) |
+
+Kevin keeps **Touch Grass** (once-per-run full heal) as his own ultimate. By Floor 8 he uses all five powers.
 
 ### Running gags (set up → pay off)
 
 | Gag | Set up | Pays off |
 | --- | --- | --- |
 | "I just wanted a haircut" | Prologue | Post-credits barbershop scene |
-| Kevin's ticket number is **5** ("Mid") | L1 check-in | L8: the Concierge calls "Number 5" one last time; Kevin rips the ticket |
-| Sandwich-shop loyalty card (9 of 10 stamps) | L1 Business Card Duel | Ascend ending: he finally gets the 10th stamp |
+| Kevin's ticket number is **5** ("Mid") | L1 check-in; the machine prints 5 again after Brenda | L8: the Concierge calls "Number 5" one last time; Kevin rips the ticket |
+| Sandwich-shop loyalty card (9 of 10 stamps) | L1 Business Card Duel | L7 sandwich walk; Ascend ending's tenth stamp |
 | Grandpa's 40 kg gum quest | L2 | L8: Kevin uses the gum to jam the Front Camera's lens |
 | Clavicoolar checks every mirror | L3 | L8: he refuses to look into the Front Camera: "First mirror I've ever skipped." |
-| Androjenic rates everything | L4 | L4 outro: Kevin rates *him*, and it changes him |
+| GLOW UP GANG group chat | L1, when Kareem adds Kevin | Grows with every ally; L8 everyone shows up in person |
+| Androjenic rates everything | L4 | L4 outro: Kevin rates *him*, and it frees him |
 | Chico sightings | any floor, rare | Every character reacts differently (see Chico section) |
 | One broken ring light per corridor | L1 | L8: the Concierge's "eye" flickers the same way when it's losing |
+
+Jump-scare placements for every floor: [JUMPSCARES.md](JUMPSCARES.md). In this script they're marked **⚡JS_xx**.
 
 ---
 
@@ -80,6 +104,8 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 `[L1_KEV_002]` **KEV**: "She's dead."
 `[L1_CON_002]` **CON**: "She's *glowing*."
 
+⚡**JS_01** Kevin looks at the TV ads; when he turns back, Brenda's chair has rotated to face him. Her head tilts. "Number?" — "…Five." — "Mid." She turns back.
+
 **Gameplay** — first steps. Ambient muzak plays at 80% speed.
 
 `[L1_CON_003]` **CON** (once, on first flashlight use): "Flashlights are free! Ring lights are better. Ring lights are love."
@@ -116,15 +142,17 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 `[L1_KAR_010]` **KAR**: "A Sub-5. They skipped face day. Every day."
 `[L1_KAR_011]` **KAR**: "Don't let it touch you. Mid is contagious."
 
-**Gameplay** — first Ghoul encounter. Ring lights scare it off.
+**Gameplay** — first Ghoul encounter. Ring lights scare it off. ⚡**JS_02** in the staff toilet, Kevin's reflection lags one frame, then slams its palm on the glass. Then it fixes its hair.
 
 `[L1_KAR_012]` **KAR** (once, when Kevin stands under a ring light): "See? Light heals. Light forgives. Light is your father now."
 
-### 1.4 Boss — The Business Card Duel
+### 1.4 Kareem's test — the Business Card Duel
+
+*(Not a boss. A comedy test Kareem runs before he trusts Kevin.)*
 
 *[A waiting room with two chairs facing each other like a western standoff. Tumbleweed made of cotton pads rolls past.]*
 
-`[L1_KAR_013]` **KAR**: "Before I let you upstairs, a formality."
+`[L1_KAR_013]` **KAR**: "Before I trust you with anything, a formality."
 *[He slides a card out of his robe. Slow-motion close-up. Matte black. Embossed.]*
 `[L1_KAR_014]` **KAR**: "Look at the texture. The matte finish. The embossing. Now. Show me yours."
 
@@ -138,13 +166,48 @@ Rules (from [CLAUDE.md](../CLAUDE.md)): parody names only · jokes about the tre
 *[Kareem drops to his knees.]*
 `[L1_KAR_017]` **KAR**: "Free. He said free. Nothing's ever free here."
 
-**Phase 2 (gameplay):** card-texture rhythm prompts. Kareem can't damage Kevin, only lower his rating with insults.
-
+**Gameplay:** short card-texture rhythm prompts. Kareem can only lower Kevin's rating with insults; you can't die here.
 `[L1_KAR_018]` **KAR** (bark): "Your card has a coffee stain. *A coffee stain.*"
 `[L1_KAR_019]` **KAR** (bark): "Laminated? Who raised you?"
-`[L1_KAR_020]` **KAR** (defeated): "Fine. Go upstairs. Moisturise on the way."
 
-### 1.5 Secret — Touch Grass
+### 1.5 Power: Routine Combo
+
+`[L1_KAR_020]` **KAR**: "No routine. No card. No future. But you have… potential. Nine stamps of it."
+*[He presses a tiny glass bottle into Kevin's palm. It glows green. UI: **POWER UNLOCKED — ROUTINE COMBO**.]*
+`[L1_KAR_021]` **KAR**: "Cleanse. Tone. Serum. SPF. Use it when you're dying. Which will be often."
+`[L1_KEV_011]` **KEV**: "Are you coming with me?"
+`[L1_KAR_022]` **KAR**: "Upstairs? The lighting up there is *hostile*. Text me."
+*[Kevin's phone buzzes. "Kareem Shammy added you to **GLOW UP GANG** 🧴". Kareem walks back into the fog.]*
+
+### 1.6 Boss — Brenda
+
+*[Kevin passes the reception desk on the way to the elevator. Brenda's chair is facing the wall. ⚡**JS_03** Every light cuts out. A single ding.]*
+
+`[L1_CON_008]` **CON** *(at full volume)*: "NOW SERVING… NUMBER… FIVE."
+*[Emergency light flickers on. Brenda is standing on the desk. Way too tall. Her joints crack like knuckles. Her skin is flawless and glowing over a bare skull.]*
+`[L1_BREN_001]` **BREN** *(sweet, then not)*: "Thirty years. Thirty years I've been waiting for my results. And YOU get called first?"
+`[L1_KEV_012]` **KEV**: "I didn't even want to be here."
+`[L1_BREN_002]` **BREN**: "NOBODY WANTS TO BE HERE."
+
+**Phase 1 — The flicker.** Whenever the lights flicker, Brenda teleports to a different desk. Stay under working lights. Use **Routine Combo** to heal.
+`[L1_BREN_003]` **BREN** (bark, teleporting): "Please hold."
+`[L1_BREN_004]` **BREN** (bark): "Your call is important to us."
+`[L1_BREN_005]` **BREN** (bark): "Have you tried… waiting?"
+
+**Phase 2 — Rejected.** She throws giant rubber stamps that land with "REJECTED" in red, and rings a bell that calls swarms of Retainer Chatterers.
+`[L1_BREN_006]` **BREN** (bark): "Rejected. Rejected. Mid. Rejected."
+`[L1_KAR_023]` **KAR** *(text, phone pops up in the corner)*: "Moisturise between dodges. Trust me."
+
+**Phase 3 — Now serving.** Kevin reaches the NOW SERVING bell on the counter and holds out his ticket.
+`[L1_KEV_013]` **KEV**: "Here. You go first."
+`[L1_BREN_007]` **BREN** *(small)*: "…Me?"
+`[L1_CON_009]` **CON** *(sulky)*: "Fine. Brenda. Your results are ready. You're… a ten."
+`[L1_BREN_008]` **BREN** *(happy sigh)*: "I knew it."
+*[She crumbles into glittering dust. Only her clipboard is left. The ticket machine whirs and prints Kevin a new ticket: 5.]*
+`[L1_KEV_014]` **KEV**: "Why didn't anyone just let her go first?"
+`[L1_CON_010]` **CON**: "Engagement!"
+
+### 1.7 Secret — Touch Grass
 
 If the player walks back out of the front door within 60 seconds of the prologue:
 
@@ -154,14 +217,14 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L1_KEV_009]` **KEV**: "I'm good, actually."
 *[Cut to the Touch Grass ending. See Endings.]*
 
-### 1.6 Elevator ride 1 → 2
+### 1.8 Elevator ride 1 → 2
 
 *[A rusty elevator. Muzak. A small screen plays an ad: a perfect face blinks too slowly.]*
 
 `[E1_CON_001]` **CON**: "Going down. While you wait, have you considered… being taller?"
 `[E1_KEV_001]` **KEV**: "Going *down*? The exit's on the top floor."
 `[E1_CON_002]` **CON**: "Every glow-up starts at rock bottom!"
-`[E1_KAR_001]` **KAR** *(over the elevator speaker)*: "Exfoliate for me."
+`[E1_TXT_001]` **GLOW UP GANG — Kareem:** "exfoliate for me 🙏"
 
 ---
 
@@ -201,7 +264,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 `[L2_GRAN_018]` **GRAN**: "Ah, my collection. Every one a success story. Well. Most of them."
 `[L2_KEV_009]` **KEV**: "Is that… an expander? Why is it in a jar?"
-*[Kevin turns away. Behind him: click. He turns back. Every expander has turned a quarter turn.]*
+*[Kevin turns away. Behind him: click. He turns back. Every expander has turned a quarter turn. ⚡**JS_04** one jar is empty. Something clicks onto Kevin's face: an Expander Spider.]*
 `[L2_KEV_010]` **KEV**: "Why is it *moving?*"
 `[L2_GRAN_019]` **GRAN**: "Quarter turn every night, boy. They don't forget. Even in jars."
 `[L2_KEV_011]` **KEV**: "I had headgear in Year 8. I'm not going back."
@@ -211,7 +274,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 *[At the end of the gallery: the Headgear Rack. Dozens of reverse-pull face masks hang like hockey masks in a slasher film. One hook is empty. Its label swings: "PATIENT 0".]*
 `[L2_KEV_013]` **KEV**: "There's one missing."
 `[L2_GRAN_020]` **GRAN**: "Oh, that one never liked the rack."
-*[Far down the tunnel: the creak of rubber bands stretching. A face mask floats into the light, bands pulled taut to the walls. It tilts its empty head.]*
+*[⚡**JS_05** Rubber bands snap taut across the corridor an inch from Kevin's face, *twang*. Far down the tunnel, a face mask floats into the light, its bands pulled to the walls. It tilts its empty head.]*
 `[L2_KEV_014]` **KEV** *(whisper)*: "Nope. Rubber bands. I'm out."
 
 **Gameplay:** first **Headgear** stalker section. Kevin must cut its bands with scissors or hide behind pillars. **Expander Spiders** click along the floor.
@@ -231,6 +294,20 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L2_GRAN_010]` **GRAN**: "…and I said to my wife, Margaret, I said—"
 `[L2_KEV_006]` **KEV**: "GRANDPA."
 `[L2_GRAN_011]` **GRAN**: "Ah, you're in the vent room. Pull the red lever. Anyway. Margaret."
+
+### 2.3b The Silent Walk → power: Silent Mewing
+
+*[A cavern full of sleeping Mouth Breathers, slumped against the walls, breathing in a slow chorus. Dr. Meow stops, points at his own closed mouth, then at Kevin's.]*
+`[L2_MEOW_009]` **MEOW** *(hums, barely)*: "Mm." **(sub)** *"Not one sound. Follow my feet."*
+
+**Gameplay:** follow Dr. Meow across the nest, stepping only where he steps. Any sound wakes the nearest Mouth Breather. ⚡**JS_06** (fake-out): warm breath on Kevin's neck… it's Dr. Meow, humming encouragement.
+`[L2_KEV_015]` **KEV** *(whisper)*: "Don't breathe on me."
+`[L2_MEOW_010]` **MEOW** *(offended hum)*: "Mm!" **(sub)** *"Nose breathing. It's GOOD breathing."*
+
+*[On the far side, Dr. Meow places one finger on Kevin's chin and tilts it up. Tongue to the roof. Something clicks. UI: **POWER UNLOCKED — SILENT MEWING**.]*
+`[L2_MEOW_011]` **MEOW** *(proud hum)*: "Mmm-hm." **(sub)** *"Now you're forward."*
+`[L2_GRAN_021]` **GRAN**: "First time he's passed it on. I'm welling up. It's the damp."
+*[Phone buzz: "Dr. Mike Meow joined GLOW UP GANG". His first message: "mm".]*
 
 ### 2.4 Boss — The Giant Mouth Breather
 
@@ -266,6 +343,8 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[E2_CON_001]` **CON**: "Going down again! You're making excellent progress. Downward."
 `[E2_KEV_001]` **KEV**: "Why do you keep sending me down?"
 `[E2_CON_002]` **CON**: "Fun fact: ninety percent of users who reach Floor 3 never leave. They love it. They're *bonded* to it."
+`[E2_TXT_001]` **GLOW UP GANG — Dr. Mike Meow:** "mm"
+`[E2_TXT_002]` **GLOW UP GANG — Kareem:** "he says good luck"
 *[A distant, rhythmic BONK. BONK. BONK.]*
 
 ---
@@ -290,22 +369,27 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L3_KEV_003]` **KEV**: "That's bad."
 `[L3_CLAV_004]` **CLAV**: "For them. Get me out and I'll show you."
 
-**Gameplay** — reach the cage control while dodging hammer presses and Double Chin Blobs.
+**Gameplay** — reach the cage control while dodging hammer presses and Double Chin Blobs. ⚡**JS_07** the first press slams down right beside Kevin (BONK); the wall sign "Days since last bonk" flips to 0. ⚡**JS_08** a Double Chin Blob drops from a pipe and splits on landing.
 
 `[L3_CLAV_005]` **CLAV** (bark, Kevin hit by a Blob): "Don't hit it! It splits! Aim chin-up. Headshots only."
 `[L3_CLAV_006]` **CLAV** (bark): "Those Blobs have no jawline. It's honestly the scariest thing in here."
 `[L3_CLAV_007]` **CLAV** (bark, Kevin dodges a press): "Nice. Your dodge is a seven. Your face is still a five."
 
-### 3.3 The Bone Smash (tutorial cutscene)
+### 3.3 Power: Bone Smash
 
 *[Cage drops. Clavicoolar lands perfectly. He looks at the camera, then raises the hammer to his own face.]*
 
 `[L3_KEV_004]` **KEV**: "What are you doing."
 `[L3_CLAV_008]` **CLAV**: "Watch closely. This is called maxxing."
-*[BONK. A cartoon star circles his head. A little "+BONE" text pops up. His jaw gets one millimetre sharper.]*
+*[BONK. A cartoon star circles his head. A little "+BONE" pops up. His jaw gets one millimetre sharper.]*
 `[L3_CLAV_009]` **CLAV**: "Bonk."
 `[L3_KEV_005]` **KEV**: "Please never do that again."
-`[L3_CLAV_010]` **CLAV**: "I do that forty times a day."
+`[L3_CLAV_010]` **CLAV**: "Your turn."
+`[L3_KEV_015]` **KEV**: "Absolutely not."
+`[L3_CLAV_019]` **CLAV**: "You freed me. I owe you. One bonk. Trust the bone."
+*[Kevin sighs, takes the hammer, and taps his own forehead. Tiny "bonk". A single cartoon star. UI: **POWER UNLOCKED — BONE SMASH**.]*
+`[L3_KEV_016]` **KEV**: "…That didn't hurt. Why didn't that hurt?"
+`[L3_CLAV_020]` **CLAV**: "Because now you have bone."
 *[On-screen disclaimer in the corner, small: "Cartoon. Do not do this. Seriously."]*
 
 ### 3.4 Boss — The Headhunter Squad
@@ -315,16 +399,19 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L3_HH_001]` **HH LEADER**: "Target acquired. Clavicoolar. Head. Take the shot."
 `[L3_CLAV_011]` **CLAV**: "Aim for the head. Please. I'm begging you."
 
-**Phase 1:** Kevin fights Blobs and Ghouls while Clavicoolar draws fire.
+**Phase 1:** fight Blobs and Ghouls while Clavicoolar draws fire.
 
-*[Slow-motion. A bullet hits Clavicoolar square in the forehead. It flattens. Clink. It falls. A bright metallic PING echoes.]*
+*[Slow-motion. A bullet hits Clavicoolar square in the forehead. It flattens. Clink. It falls. A bright metallic PING.]*
 **ON-SCREEN TEXT:** "TOO MUCH BONE"
 `[L3_HH_002]` **HH 2**: "…Confirmed headshot."
 `[L3_HH_003]` **HH LEADER**: "Then why is he *posing?*"
 `[L3_CLAV_012]` **CLAV**: "They shot me in the head. The bullet apologised."
 
-**Phase 2:** player gets the hammer. Clavicoolar keeps re-applying Bone Smash every 20 s. The Headhunters get more desperate.
-
+**Phase 2:** the snipers switch targets to Kevin. ⚡**JS_09** a red dot appears on Kevin's forehead in a mirror. Use **Bone Smash**.
+*[PING. A bullet bounces off Kevin's forehead too.]*
+`[L3_HH_009]` **HH 3**: "Sir. There's two of them."
+`[L3_HH_010]` **HH LEADER**: "The mid one too?!"
+`[L3_KEV_017]` **KEV**: "Hey. I'm right here."
 `[L3_HH_004]` **HH 3** (bark): "Switching to bigger rounds!" *(PING)* "…Switching to *even bigger*—" *(PING)*
 `[L3_HH_005]` **HH 4** (bark): "Sir, the bullets are bending."
 `[L3_CLAV_013]` **CLAV** (bark): "Is that all? My barber hits harder."
@@ -332,7 +419,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L3_KEV_006]` **KEV** (bark): "Now's not the time!"
 `[L3_CLAV_015]` **CLAV** (bark): "It's *always* the time."
 
-**Phase 3:** Clavicoolar uses **Ascend**. He floats up in green light. The snipers' lasers all point at him and stop.
+**Phase 3:** Clavicoolar uses **Ascend**. He floats up in green light. Every laser points at him and stops.
 
 `[L3_HH_006]` **HH LEADER**: "…Lads. I'm going back to dental school."
 `[L3_HH_007]` **HH 2**: "I'm going to go work at my uncle's sandwich shop."
@@ -345,9 +432,10 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 `[L3_CLAV_016]` **CLAV**: "You're still a five."
 `[L3_KEV_009]` **KEV**: "Thanks."
-`[L3_CLAV_017]` **CLAV**: "But your hammer swing is a nine. Take this."
-*[Item: **Spare Hammer**. Clavicoolar unlocked as playable.]*
+`[L3_CLAV_017]` **CLAV**: "But your hammer swing is a nine. Keep this one."
+*[Item: **Spare Hammer**.]*
 `[L3_CLAV_018]` **CLAV**: "Go up. I'll catch up. I need to check this angle." *(turns to a puddle)*
+*[Phone buzz: "Clavicoolar joined GLOW UP GANG". He immediately sends a selfie. Then another.]*
 
 ### 3.6 Elevator ride 3 → 4
 
@@ -356,6 +444,9 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[E3_CON_001]` **CON**: "Going… up. Hm. That's unusual. Please rate your experience so far."
 *[A rating prompt appears: 1–10 stars. Whatever the player picks:]*
 `[E3_CON_002]` **CON**: "Thank you! We've rounded your rating down to five."
+`[E3_TXT_001]` **GLOW UP GANG — Clavicoolar:** *(selfie)* "angle check"
+`[E3_TXT_002]` **GLOW UP GANG — Kareem:** "SPF?"
+`[E3_TXT_003]` **GLOW UP GANG — Clavicoolar:** *(the same selfie again)*
 
 ---
 
@@ -363,13 +454,17 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 4.1 Arrival
 
-*[An old surgical theatre turned into a courtroom. A gallery of shadowy figures holds score paddles. In the centre, under a single operating lamp: a man in lab goggles with a clipboard and a laser pointer.]*
+*[An old surgical theatre turned into a courtroom. A gallery of shadowy figures holds score paddles. ⚡**JS_12** as Kevin enters, every paddle slams up at once: 4. In the centre, under a single operating lamp: a man in lab goggles with a clipboard and a laser pointer. A green earpiece blinks in his ear; the Concierge's voice leaks out of it, tinny.]*
 
 `[L4_ANDR_001]` **ANDR**: "Stop. Stand in the light. Turn left. Turn right."
 `[L4_ANDR_002]` **ANDR**: "Canthal tilt: neutral. Jaw: present. Vibes: shower."
 `[L4_ANDR_003]` **ANDR**: "You walked in: three point five. The door you walked through: six. The door mogs you."
 `[L4_KEV_001]` **KEV**: "The door is very nice, to be fair."
 `[L4_ANDR_004]` **ANDR**: "Do not agree with me. It makes it less satisfying."
+`[L4_CON_002]` **CON** *(tinny, from the earpiece)*: "Rate him lower. Lower. Everyone is a four."
+`[L4_ANDR_020]` **ANDR** *(twitching)*: "Everyone… is a four."
+`[L4_KEV_006]` **KEV**: "Is that thing talking to you?"
+`[L4_ANDR_021]` **ANDR**: "It *helps* me. It tells me the numbers."
 
 ### 4.2 Mog Battles (three rounds)
 
@@ -383,6 +478,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L4_ANDR_007]` **ANDR**: "Round two. You versus you."
 `[L4_KEV_002]` **KEV**: "That's not fair, he's me."
 `[L4_ANDR_008]` **ANDR**: "Exactly. Nobody's harder on you than you."
+⚡**JS_11** Kevin blinks. His reflection doesn't.
 *(This is the only line where Androjenic is accidentally wise. He doesn't notice.)*
 
 **Round 3 — vs. Androjenic.**
@@ -393,7 +489,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 *[Between rounds, Kevin is sent to a side room. One dental chair under an operating lamp. Wherever he stands, the chair slowly swivels to face him. A tray of orthodontic pliers clinks by itself.]*
 `[L4_KEV_005]` **KEV**: "I'm not sitting in that."
 `[L4_CON_001]` **CON**: "The Chair would like to see you now."
-*[The lamp swings toward Kevin. The chair's wheels unlock. It rolls toward him, slow at first, then fast.]*
+*[Kevin glances at the door. ⚡**JS_10** He looks back: the chair is right behind him, lamp blazing in his face. The wheels unlock. It rolls after him, slow at first, then fast.]*
 **Gameplay:** short chase through the gallery corridors; slam doors to slow it down; giant facial calipers on the walls snap shut as you pass (QTE dodge).
 `[ORTHO_KEV_005]` **KEV** (bark, chase): "WHY DOES IT HAVE WHEELS."
 `[ORTHO_KEV_006]` **KEV** (bark, calipers snap): "Measured! I got measured!"
@@ -402,7 +498,8 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 4.3 Boss — Androjenic
 
-**Phase 1** (boss music: aggressive orchestral). Androjenic fires "rating beams" from the laser pointer.
+**Phase 1** (boss music: aggressive orchestral). Androjenic fires "rating beams" from the laser pointer. Beams to the head bounce off **Bone Smash**.
+`[L4_ANDR_023]` **ANDR** (beam bounces): "You can't be immune to *feedback*."
 `[L4_ANDR_010]` **ANDR** (bark): "Four. Four. Three-point-eight. Four."
 `[L4_ANDR_011]` **ANDR** (bark): "Your posture is a question mark."
 `[L4_ANDR_012]` **ANDR** (bark): "Your shoes: six. You: decorative."
@@ -419,6 +516,8 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 4.4 Outro — "Nobody rates the rater"
 
+*[The earpiece pops out of Androjenic's ear and skitters across the floor, still whispering "four… four…". Kevin steps on it. Crunch. Silence. The gallery lowers its paddles.]*
+
 *[Kevin picks up a score paddle from the floor. Androjenic stares, horrified. Kevin flips it.]*
 
 **PADDLE:** 7
@@ -426,12 +525,16 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L4_KEV_003]` **KEV**: "You're kind of a lot. But you're good at your job."
 `[L4_ANDR_017]` **ANDR** *(quietly)*: "Nobody's ever rated me before."
 `[L4_ANDR_018]` **ANDR**: "Is this what it feels like? It's horrible. Do it again."
-*[Androjenic unlocked as playable.]*
+`[L4_ANDR_022]` **ANDR**: "I'm going outside. I'm going to rate a sunset. A real one."
+*[He leaves. Freed. He returns in the finale. Androjenic is unlocked as playable in replay modes.]*
 
 ### 4.5 Elevator ride 4 → 5
 
 `[E4_CON_001]` **CON**: "Going up! Floor 5: the rooftop garden. Fresh air! Mostly."
 `[E4_CON_002]` **CON**: "Reminder: the clinic is not responsible for anything you see in the garden. Especially yourself."
+`[E4_TXT_001]` **GLOW UP GANG — Kareem:** "did you beat the clipboard guy"
+`[E4_TXT_002]` **GLOW UP GANG — Kevin:** "i gave him a 7"
+`[E4_TXT_003]` **GLOW UP GANG — Clavicoolar:** "generous"
 
 ---
 
@@ -439,7 +542,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 5.1 Arrival
 
-*[A walled rooftop garden at night, turned into a graveyard. Fog. Moonlight blue against green. Every tombstone has a "before" photo on it.]*
+*[A walled rooftop garden at night, turned into a graveyard. Fog. Moonlight blue against green. Every tombstone has a "before" photo on it. ⚡**JS_13** one photo blinks as Kevin passes.]*
 
 **Readable tombstones** (examples, see [DETAILS.md](DETAILS.md) for more):
 - "HERE LIES DEREK. TRIED 47 SERUMS. SHOULD HAVE TRIED SLEEP."
@@ -448,31 +551,40 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 `[L5_KEV_001]` **KEV**: "This is the most depressing garden I've ever seen."
 `[L5_STINK_001]` **STINK** *(from directly behind him)*: "It's very peaceful, actually."
+*[⚡**JS_15** (fake-out) Kevin spins round. A hunched guy in a huge hoodie, right in his face.]*
 `[L5_KEV_002]` **KEV**: "AAH. How long have you been there?"
 `[L5_STINK_002]` **STINK**: "Since Floor 1. Nobody notices me in Before form."
+`[L5_STINK_009]` **STINK** *(beat)*: "…Wait. You noticed me."
+`[L5_KEV_018]` **KEV**: "You were breathing on my neck."
+`[L5_STINK_010]` **STINK** *(emotional)*: "Nobody's ever noticed me. Ever. Here. Take it. You've earned it."
+*[He pulls his hood over Kevin's head for a second. Kevin flickers, half-invisible. UI: **POWER UNLOCKED — BEFORE FORM**.]*
+`[L5_STINK_011]` **STINK**: "Six seconds of nobody. It's the best feeling in the world."
+*[Phone buzz: "Baby Stinkley joined GLOW UP GANG". Nobody in the chat reacts. Kevin reacts with a 👍.]*
 
-### 5.2 Baby Stinkley and Oliver Forsmile
+### 5.2 Oliver Forsmile
 
-*[A hunched guy in a huge hoodie. He shrugs. Then a blinding white light: a man smiles at the camera and the whole graveyard lights up.]*
+*[A blinding white light: a man smiles and the whole graveyard lights up. Then his teeth flicker, dimming.]*
 
 `[L5_OLI_001]` **OLI**: "Hi! Stay behind me. And bring sunglasses."
 `[L5_KEV_003]` **KEV**: "Why are your teeth a light source?"
-`[L5_OLI_002]` **OLI**: "Veneers. Twelve thousand lumens."
-`[L5_STINK_003]` **STINK**: "Watch this." *(he poses; dramatic swelling music; a slow zoom)* **After form.**
-`[L5_STINK_004]` **STINK** *(loud, confident)*: "WHAT'S UP, GRAVEYARD."
-*[Every Ghoul in the area turns toward him.]*
-`[L5_STINK_005]` **STINK**: "…Okay, back to Before. Back to Before."
+`[L5_OLI_002]` **OLI**: "Veneers. Twelve thousand lumens. But I'm low. Somebody left coffee *everywhere*."
 
-**Gameplay — form swap stealth + smile flashlight.**
+**Gameplay — the Dark Escort.** Oliver's smile is the only light. Coffee cups lie all over the graveyard; if he walks into one, his teeth drain. Kevin goes ahead (using **Before Form** to slip past Ghouls) and kicks the cups away while Oliver lights the path.
 `[L5_OLI_003]` **OLI** (bark, teeth dimming): "I'm losing whiteness! Nobody give me coffee."
-`[L5_OLI_004]` **OLI** (bark, Smile Flash): "Say cheese!"
+`[L5_OLI_004]` **OLI** (bark): "Is that a latte? Kevin. KEVIN. Kick it."
 `[L5_OLI_005]` **OLI** (bark): "Smile through the fear. Literally. It's my only light."
-`[L5_STINK_006]` **STINK** (bark, Before form): "I'm a wall. I'm a lamp. I'm nobody."
-`[L5_STINK_007]` **STINK** (bark, After form, sees a camera flash): "Is that a photographer? I'M COMING."
+⚡**JS_14** Midway, someone drops a full cup. Oliver's teeth go out. Total darkness. A phone screen lights up a Ghoul's face inches from Kevin's. It's scrolling. It doesn't notice him. It mumbles: "brb." and crawls off.
+
+*[At the crypt gate, Oliver's smile is back to full. He grins at Kevin.]*
+`[L5_OLI_008]` **OLI**: "You kept the coffee off me. Nobody does that. Here, smile."
+*[He taps Kevin's front tooth. It glows. UI: **POWER UNLOCKED — SMILE FLASH**.]*
+`[L5_KEV_019]` **KEV**: "My tooth is a torch now."
+`[L5_OLI_009]` **OLI**: "Welcome to the bright side!"
+*[Phone buzz: "Oliver Forsmile joined GLOW UP GANG". He sends a smiling photo so bright the phone screen goes white.]*
 
 ### 5.3 Boss — The Before Photo
 
-*[At the centre of the graveyard: an open grave. Inside, a huge framed photo: Kevin's school ID photo. Bad haircut, braces, mid-blink. It climbs out on spider legs made of selfie sticks.]*
+*[⚡**JS_16** At the centre of the graveyard, a camera flash strobes. An open grave. Inside, a huge framed photo: Kevin's school ID photo. Bad haircut, braces, mid-blink. It climbs out on spider legs made of selfie sticks.]*
 
 `[L5_KEV_004]` **KEV**: "No. Not that one. Anything but that one."
 `[L5_BP_001]` **BP** *(Kevin's voice, but younger and cracking)*: "Remember me? You will. Every time you scroll."
@@ -507,43 +619,50 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 6.1 Arrival
 
-*[Steam. Pink spa neon against green. Tiled pools. Rusty pipes groan. Water is already at ankle height and rising.]*
+*[Steam. Pink spa neon against green. Tiled pools. Rusty pipes groan. Fat green hoses run from the ceiling into the foam cannons, pumping something that glows. Water is already at ankle height and rising.]*
 
 `[L6_DYL_001]` **DYL** *(echoing, spa-calm)*: "Welcome… to the spa… breathe in… breathe out…"
 `[L6_DYL_002]` **DYL** *(suddenly screaming)*: "AND DOUBLE CLEANSE!"
 *[Foam cannons fire down every corridor.]*
 `[L6_KEV_001]` **KEV**: "Why is it always both."
+`[L6_CON_002]` **CON** *(through the hoses, bubbling)*: "More foam, Dylan. They're not clean enough. Nobody's ever clean enough."
 
-**Gameplay — sliding on foam, outrun the rising water.**
+**Gameplay — sliding on foam, outrun the rising water.** ⚡**JS_17** something grabs Kevin's ankle in the shallow pool: a pool noodle. Then, behind it, a Ghoul in a shower cap. ⚡**JS_18** steam clears off a mirror; written in the condensation: "NGMI".
 `[L6_DYL_003]` **DYL** (bark): "You've never double cleansed? Then you've never truly lived."
 `[L6_DYL_004]` **DYL** (bark): "Exfoliation is a journey. You're about to slip on it."
 `[L6_DYL_005]` **DYL** (bark): "Hydration is not optional. The water is coming either way."
 `[L6_CON_001]` **CON** (bark): "Water level: rising! Pores: opening! Mood: moist!"
+`[L6_TXT_001]` **GLOW UP GANG — Kareem:** "a SPA?? without me??"
 
 ### 6.2 Boss — Dylan's Foam Storm
 
-*[A huge round pool. Dylan stands on a lifeguard chair with a towel turban and a foam-cannon backpack.]*
+*[A huge round pool. Dylan stands on a lifeguard chair with a towel turban and a foam-cannon backpack. Its hose runs up into the ceiling.]*
 
 `[L6_DYL_006]` **DYL**: "Robes on. Lights low. Let's get… *lathered*."
 
-**Phase 1:** foam waves. Slide between pillars.
+**Phase 1:** foam waves. Slide between pillars. **Silent Mewing** lets Kevin slip past the noise-tracking foam turrets.
 **Phase 2:** water rises; fight on floating pool noodles.
 `[L6_DYL_007]` **DYL** (bark): "Step one of my routine: you lose."
-**Phase 3:** a foam blob splashes into his own eyes.
+**Phase 3:** cut his backpack hose (it's the Concierge's line), and the backfire sprays foam straight into his eyes.
 `[L6_DYL_008]` **DYL**: "AAH. My eyes. Not my eyes. That's step nine, it's not time for step nine!"
 
-*[He falls into the pool. Pops up. Calm again.]*
+*[He falls into the pool. The hose goes limp. He pops up. Calm. Clear-eyed.]*
 `[L6_DYL_009]` **DYL**: "You know what… that was actually very cleansing."
-`[L6_DYL_010]` **DYL**: "Robes for everyone. You've earned it."
-*[Every ally appears wearing a fluffy robe in the next scenes. Dylan Lathered joins as ally.]*
+`[L6_DYL_010]` **DYL**: "I've been foaming for six years. I don't even like foam. I like baths."
+`[L6_DYL_011]` **DYL**: "There's a rack of robes by the lift. Take them. For your friends."
+*[He floats off on his back. Freed. He returns in the finale. Item: **Robes (×5)**. Dylan is unlocked as playable in replay modes.]*
 
 ### 6.3 Elevator ride 6 → 7
 
-*[Everyone is crammed into the elevator in robes. Dr. Meow hums the elevator music.]*
+*[Kevin rides up alone with an armful of fluffy robes. The group chat explodes.]*
 
-`[E6_CLAV_001]` **CLAV**: "This elevator mirror is honestly elite."
-`[E6_ANDR_001]` **ANDR**: "Elevator mirror: eight. Elevator: two."
-`[E6_KAR_001]` **KAR**: "Everybody, SPF. Floor 7 has stage lights."
+`[E6_TXT_001]` **GLOW UP GANG — Kevin:** *(photo of the robes)* "got these for you guys"
+`[E6_TXT_002]` **GLOW UP GANG — Clavicoolar:** "what colour"
+`[E6_TXT_003]` **GLOW UP GANG — Kareem:** "thread count??"
+`[E6_TXT_004]` **GLOW UP GANG — Dr. Mike Meow:** "mm!!"
+`[E6_TXT_005]` **GLOW UP GANG — Oliver:** "SO cosy 😁" *(the screen flashes white)*
+`[E6_TXT_006]` **GLOW UP GANG — Baby Stinkley:** "can i have one" *(nobody replies)*
+`[E6_TXT_007]` **GLOW UP GANG — Kevin:** "yes stinkley"
 `[E6_CON_001]` **CON**: "Floor 7: the Runway. Please walk confidently. Or not. We're filming either way."
 
 ---
@@ -552,20 +671,23 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 7.1 Arrival
 
-*[An old theatre. The stage is now a long catwalk. Hundreds of mannequins sit in the seats. When Kevin isn't looking, their heads turn. Magenta spotlights.]*
+*[An old theatre. The stage is now a long catwalk. Hundreds of mannequins sit in the seats. When Kevin isn't looking, their heads turn. Magenta spotlights, every one wired to a green box marked CONCIERGE.]*
 
 `[L7_CON_001]` **CON**: "Welcome to Fashion Week! The audience is very… still."
 `[L7_MANQ_001]` **MANQ** *(whispered, from everywhere)*: "N… G… M… I…"
 `[L7_KEV_001]` **KEV**: "Cool. Cool cool cool."
+⚡**JS_19** The lights cut out. When they come back, every mannequin head is turned toward Kevin, and one is now standing on the catwalk right in front of him. Its scorecard says: 5.
 
 ### 7.2 Jordan Ferret and Sean O'Fry
 
-*[A vent grate pops off. A tall model slides out of the ceiling vent like a ferret, lands in a perfect pose.]*
+*[⚡**JS_20** A vent grate pops off above Kevin. A tall model drops down upside down, face to face with him, like a ferret, then lands in a perfect pose.]*
 `[L7_FER_001]` **FER**: "Walk with me. Or under me. I'm in the vents."
-*[On the catwalk, a second model stands perfectly still. His eyes are glowing orange. A frying pan floats in front of his face; an egg is sizzling on it from his stare alone.]*
+*[On the catwalk, a second model stands perfectly still in a green spotlight. His eyes are glowing orange. A frying pan floats in front of his face; an egg is sizzling on it from his stare alone.]*
 `[L7_FRY_001]` **FRY**: "Don't make me blink."
 `[L7_KEV_002]` **KEV**: "Is that… breakfast?"
 `[L7_FRY_002]` **FRY**: "Hunter eyes. Over easy."
+`[L7_CON_003]` **CON** *(from the spotlights)*: "Don't let him leave the runway, boys. Nobody leaves the runway."
+`[L7_FER_006]` **FER** *(flat, hypnotised)*: "Nobody leaves the runway."
 
 ### 7.3 Boss — The Walk-Off
 
@@ -578,29 +700,31 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L7_FRY_003]` **FRY** (bark): "Is that a pose or a cramp?"
 **Scorecards** (random): 4 · 5 · 3 · "MID" · "NGMI" · a single mannequin holds up "11" and gets carried out by the others.
 
-**Phase 2 — Combat:** Ferret attacks from vents; O'Fry fires eye lasers that cook everything in a cone.
+**Phase 2 — Combat:** Ferret attacks from vents; O'Fry fires eye lasers that cook everything in a cone. **Bone Smash** blocks the lasers to the head; **Before Form** loses Ferret in the vents.
 `[L7_FER_003]` **FER** (bark): "Behind you. No, above you. No, in the walls."
 `[L7_FRY_004]` **FRY** (bark): "Medium rare."
 `[L7_FRY_005]` **FRY** (bark): "Well done. You, not the steak."
 
-**Phase 3 — The blink.** The allies talk Kevin into the one move nobody here has tried: being normal.
-`[L7_KAR_001]` **KAR**: "Kevin. Do the walk."
-`[L7_KEV_003]` **KEV**: "What walk?"
-`[L7_KAR_002]` **KAR**: "The *sandwich* walk. The walk of a man one stamp away from greatness."
-*[Kevin walks down the catwalk completely normally, like he's going to get a sandwich. The mannequins go silent. O'Fry stares. His eyes water. He blinks.]*
+**Phase 3 — The blink.** Kevin's phone buzzes mid-fight.
+`[L7_TXT_001]` **GLOW UP GANG — Kareem:** "kevin. do the walk"
+`[L7_TXT_002]` **GLOW UP GANG — Kevin:** "what walk"
+`[L7_TXT_003]` **GLOW UP GANG — Kareem:** "the SANDWICH walk. the walk of a man one stamp away from greatness"
+*[Kevin pockets the phone and walks down the catwalk completely normally, like he's going to get a sandwich. The mannequins go silent. O'Fry stares. His eyes water. He blinks. Kevin hits him with **Smile Flash** for good measure.]*
 `[L7_FRY_006]` **FRY**: "…That was so mid it looped back to being iconic."
-*[Powers off. Ferret gets distracted by a shiny sequin and wanders into a vent.]*
+*[The spotlights' green box sparks and dies. Ferret gets distracted by a shiny sequin and wanders into a vent.]*
 
 ### 7.4 Outro
 
+*[House lights come up. Normal lights. Both models blink, freed, like they've just woken up.]*
 `[L7_FER_004]` **FER** *(from the vent)*: "Top floor's above me. Literally. Follow the vent."
 `[L7_FRY_007]` **FRY**: "Good luck with the Camera. It sees everything. Even your bad side."
 `[L7_KEV_004]` **KEV**: "I don't have a good side."
 `[L7_FRY_008]` **FRY**: "Then you've got nothing to lose."
+*[Freed. Both return in the finale. Both unlocked as playable in replay modes.]*
 
 ### 7.5 Elevator ride 7 → 8 (no music)
 
-*[The muzak is gone. The lights flicker. The Concierge's voice drops its cheerfulness for the first time.]*
+*[The muzak is gone. The group chat stops loading: "No signal". ⚡**JS_21** the lights cut, and the Concierge whispers right next to Kevin's ear (binaural audio).]*
 
 `[E7_CON_001]` **CON**: "You weren't supposed to get this far."
 `[E7_CON_002]` **CON**: "Nobody gets this far. They all stop at a mirror somewhere and they just… stay."
@@ -629,14 +753,19 @@ If the player walks back out of the front door within 60 seconds of the prologue
 `[L8_CON_006]` **CON** (bark): "Ooh, double chin. Saving that one."
 `[L8_CON_007]` **CON** (bark): "Front-facing! Unflattering! Forever!"
 
-**Phase 2:** the allies arrive in robes. Each gets one line and one assist.
+**Phase 2 — Everyone shows up.** The elevator dings. The allies arrive in Dylan's robes, followed by the freed bosses. Each gets one line and one assist. Kevin's five powers each have a use here.
 `[L8_KAR_001]` **KAR**: "Kevin! Routine Combo! Cleanse the lens!"
 `[L8_CLAV_001]` **CLAV**: "I'm not looking into it." *(eyes closed, swinging the hammer)* "First mirror I've ever skipped."
-`[L8_ANDR_001]` **ANDR**: "Camera: four. Bad resolution. Too much grain."
 `[L8_MEOW_001]` **MEOW** *(hums, face widening into a shield)*: "MMMMM!" **(sub)** *"COVER ME. I MEAN, I'LL COVER YOU."*
 `[L8_OLI_001]` **OLI**: "It wants light? I'll give it light!" *(Veneer Nova)*
-`[L8_DYL_001]` **DYL**: "Foam on the lens! It can't rate what it can't see!"
+`[L8_STINK_001]` **STINK**: "Nobody's looking at me. Perfect." *(sneaks under the lens and unplugs a cable)*
+`[L8_ANDR_001]` **ANDR** *(arriving)*: "Camera: four. Bad resolution. Too much grain. I can say that now. It's true this time."
+`[L8_DYL_001]` **DYL** *(arriving)*: "Foam on the lens! It can't rate what it can't see!"
+`[L8_FER_001]` **FER** *(from a vent)*: "I'm in its wiring. It's very shiny in here."
+`[L8_FRY_001]` **FRY**: "Don't blink, Kevin. It hates that." *(cooks the lens's ring light)*
 `[L8_GRAN_001]` **GRAN** *(on the tannoy)*: "Boy. The gum. Now's the time for the gum."
+⚡**JS_22** Before the gum, the Camera fires one last flash: a full-screen photo of Kevin's face from the worst angle possible, with the shutter sound at full volume. Rating halves.
+`[L8_CON_013]` **CON**: "Got it. Your worst angle. Forever."
 
 **Phase 3 — the gum.** Kevin throws Grandpa's 40 kg Gum. It sticks over the lens.
 `[L8_CON_008]` **CON**: "What is this. Why is it pink. Why is it *forty kilograms*."
@@ -756,6 +885,11 @@ Target for v1: ~30 per playable character. Below is the starting set; write more
 | Uses Touch Grass | "Going outside. Mentally." |
 | Picks up Jaw Juice (fake item) | "This says 'Jaw Juice'. It's green. I'm not drinking—" *(drinks)* "—okay." |
 | Idle (30 s) | "I could've been asleep." · "I bet the barber's open by now." |
+| Routine Combo (power) | "Cleanse. Tone. Serum. SPF. I hate that I know this." · "Kareem would be proud. Ugh." |
+| Silent Mewing (power) | *(no voice — tongue click)* · subtitle: "(mewing furiously)" |
+| Bone Smash (power) | "Bonk." · "Trust the bone. I can't believe I said that." · "PING. Ha." |
+| Smile Flash (power) | "Cheese." · "My tooth is a weapon now." |
+| Before Form (power) | "Nobody look at me. Easy. Story of my life." |
 | Ortho Dread (near orthodontic gear) | "Nope." · "Too many brackets." · "I can hear it tightening." · "Year 8 flashbacks. Year 8 flashbacks." · "Why is everything here a mouth?" |
 | Retainer Chatterers swarm | "They're clacking. Why are they clacking." · "Stomp. Stomp. Sorry. Stomp." |
 
@@ -824,6 +958,29 @@ Target for v1: ~30 per playable character. Below is the starting set; write more
 | --- | --- |
 | FER | "Vent." · "Shiny." · "Is that a sequin? Hold on." |
 | FRY | "Medium rare." · "Don't blink, don't blink, don't blink." · "Over easy." |
+
+---
+
+## GLOW UP GANG — group chat (`TXT_`)
+
+Kevin's phone shows the allies' texts in a corner pop-up during gameplay (no voice; a soft buzz). One random text every 3–5 minutes, chosen from members who have joined. Never during a chase or a jump scare.
+
+| ID | From | Text |
+| --- | --- | --- |
+| `TXT_001` | Kareem | "drink water. not that water. CLEAN water" |
+| `TXT_002` | Kareem | "how's your barrier holding up" |
+| `TXT_003` | Dr. Mike Meow | "mm" |
+| `TXT_004` | Dr. Mike Meow | "mm mm" *(Kareem: "he says chin up")* |
+| `TXT_005` | Clavicoolar | *(selfie)* |
+| `TXT_006` | Clavicoolar | "found a puddle. elite reflection. update later" |
+| `TXT_007` | Oliver | "SMILE 😁" *(screen flashes white)* |
+| `TXT_008` | Oliver | "accidentally drank coffee. i am a 40 watt bulb now" |
+| `TXT_009` | Baby Stinkley | "hi" *(nobody replies)* |
+| `TXT_010` | Baby Stinkley | "i've been in the chat the whole time btw" |
+| `TXT_011` | Grandpa (added by mistake) | "HOW DO I TURN THIS OFF" |
+| `TXT_012` | Grandpa | "In my day, group chats were rocks. We shouted into them." |
+| `TXT_013` | Kareem | "kevin rate your night out of 10" — Kevin: "5" — Clav: "consistent" |
+| `TXT_014` | Concierge (hacks in, F7+) | "You have been removed from GLOW UP GANG." *(it hasn't worked; Kareem: "who invited the lamp")* |
 
 ---
 
