@@ -2,7 +2,7 @@
 
 Small touches that make the game feel alive, funny, and worth clipping. None of them are required to finish the game; together they're what people remember.
 
-Last updated: 2026-11-17
+Last updated: 2026-11-19
 
 **Cost** = rough effort in UE5: **S** (under a day), **M** (a few days), **L** (a week+).
 **Priority**: ★★★ do in the vertical slice · ★★ before demo · ★ nice to have.
@@ -32,6 +32,9 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 | 15 | Post-credits barbershop scene | End | M | ★★ |
 | 16 | Wall jokes on every floor (section 12) | All | S | ★★★ |
 | 17 | Orthodontic horror: Expander Wall, Headgear stalker, The Chair (section 13) | L2, L4 | M | ★★★ |
+| 18 | Kevin reads a wall joke under his breath if you stare at it 3 s (section 4) | All | S | ★★★ |
+| 19 | Elevator ads (section 14) and loading tips (section 15) | Between floors | M | ★★ |
+| 20 | Field Guide entries in the pause menu (section 18) | UI | S | ★★ |
 
 ---
 
@@ -89,6 +92,10 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 | Idle 30 s: Kevin checks his phone; the screen shows "Barbershop: CLOSED · opens 9 AM" | S | ★ |
 | Taking damage at low rating: his breathing gets heavier and the camera bob gets sloppier | S | ★★ |
 | Kevin's hoodie is visible on his arms; at 0 rating, the hoodie sleeves cover his hands | S | ★ |
+| Kevin always walks around puddles; Clavicoolar always stops in them (to look) | S | ★★ |
+| If you stare at a wall joke for 3 s, Kevin reads it under his breath (subtitle only) | S | ★★★ |
+| Picking up anything shiny: Kevin glances at his reflection in it, then looks away fast | S | ★ |
+| Crouching too long: knees crack (sound); Kevin: "Twenty-four. My knees are forty." | S | ★ |
 
 ## 5. Character micro-details
 
@@ -184,6 +191,14 @@ Every detail follows [CLAUDE.md](../CLAUDE.md) rules: parody names only, jokes a
 | **Brenda's Friend** | Find Brenda on every floor |
 | **Mid Forever** | Finish with exactly 5.0 rating |
 | **Jestermaxxed** | Get the Jester ending |
+| **Sign Language** | Read 50 wall jokes (look at each for 2 s) |
+| **Elevator Critic** | Watch every elevator ad to the end |
+| **Hydrated. Still Mid.** | Use the water cooler 10 times in one run |
+| **Year 8 Survivor** | Finish Floor 2 without being pulled by the Headgear |
+| **Brenda's Break** | Stand next to Brenda for 60 s without looking away |
+| **Customer Feedback** | Post a note in the L1 suggestion box |
+| **Ping Collector** | Hear 500 PINGs across all runs |
+| **Quarter Turn** | Turn every Expander Key door on Floor 2 |
 
 ## 11. Accessibility (also make the game better)
 
@@ -212,6 +227,11 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Sign | "Wet floor. Great for your skin." |
 | Notice | "Mirrors removed from toilets. They kept staring back." |
 | Graffiti | "i came in for a haircut" (Kevin stops and reads it twice) |
+| Sign | "Complimentary water. Complimentary judgement." |
+| Notice | "Wi-Fi: AscensionGuest · Password: ratemeplease" |
+| Poster | "Why be you when you could be slightly different you?" |
+| Sign | "EXIT →" (the arrow points at a mirror) |
+| Notice | "Lost child? Please wait by the ring light. It's the most flattering spot." |
 
 ### Floor 2 — Mewing Catacombs
 | Type | Text |
@@ -224,6 +244,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Notice | "LOST: one tongue posture. Last seen 2009. Answers to 'roof'." |
 | Poster (ortho) | "Turn the key a quarter turn. Every night. EVERY. NIGHT." |
 | Poster (ortho) | "Wear your headgear 22 hours a day." (Kevin flinches) |
+| Sign | "Echoes may vary in attractiveness." |
+| Graffiti | "who keeps humming" (underneath, smaller: "mmm-hmm") |
+| Notice | "Used gum belongs on the CEILING. Thank you. — Mgmt (Grandpa)" |
+| Graffiti | "jaw went forward. house deposit went backward." |
 
 ### Floor 3 — Bone Smash Basement
 | Type | Text |
@@ -235,6 +259,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Notice | "This machine has no feelings. Neither does Clav." |
 | Poster | "Bone is a mindset." (with Clav's silhouette) |
 | Graffiti | "the bullets apologised" |
+| Notice | "Safety goggles protect your hunter eyes. Wear them." |
+| Sign | "Lifting with your jaw is NOT correct form." |
+| Poster | "Employee of the Week: The Anvil." |
+| Graffiti | "PING PING PING PING PING" (tally marks next to it) |
 
 ### Floor 4 — The Rating Chamber
 | Type | Text |
@@ -244,6 +272,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Scoreboard | "HIGHEST RATING EVER: 6.2 (a door)" |
 | Notice | "Please do not rate the jury." |
 | Poster (ortho) | "BRACE YOURSELF." (a giant smiling mouth full of braces) |
+| Notice | "Appeals: Room 0. There is no Room 0." |
+| Sign | "Please rate quietly." |
+| Scoreboard | "LOWEST RATING EVER: Mondays" |
+| Poster | "Left side of your face: on time. Right side: running late." |
 
 ### Floor 5 — Glow-Up Graveyard
 | Type | Text |
@@ -253,6 +285,9 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Notice | "No selfies after midnight. They come back." |
 | Tombstones | See section 6 (Derek, Gary, Steve, Kyle, Unknown, Mum) |
 | Graffiti (ortho) | "RETAINERS ARE FOREVER" carved into a crypt door |
+| Sign | "Flowers must be photographed before placing." |
+| Notice | "Ghosts must show their good side to visitors." |
+| Graffiti | "came for a glow-up. left as a glow-down." |
 
 ### Floor 6 — The Lathered Spa
 | Type | Text |
@@ -262,6 +297,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Notice | "Towels: one per person. Robes: as many as your confidence allows." |
 | Price list | Every treatment costs "Your soul" except "Water: $14" |
 | Poster | "Shower thoughts welcome. Double-cleanse thoughts mandatory." |
+| Sign | "Sauna: too hot for opinions." |
+| Notice | "LOST: one eyebrow. Plucked in anger. Reward." |
+| Poster | "Moisturise before you panic." |
+| Sign | "FOAM LEVEL: fine" (changes to "CRITICAL" in the boss fight) |
 
 ### Floor 7 — Runway of the Damned
 | Type | Text |
@@ -271,6 +310,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Door sign | "Dressing Room 2: J. Ferret (in the vents)" |
 | Notice | "Mannequin Union rule 1: don't look at them. Rule 2: see rule 1." |
 | Mirror note | "Smile with your eyes." · "No. Your OTHER eyes." |
+| Sign | "Runway length: 40 m. Ego length: unknown." |
+| Notice | "Models must not out-stare the lighting rig. Again." |
+| Poster | "Hunter eyes. Gatherer eyebrows." |
+| Sign | "APPLAUSE" (lit, always on; nobody claps) |
 
 ### Floor 8 — The Front Camera
 | Type | Text |
@@ -279,6 +322,10 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Notification | "Screen time this week: yes." |
 | Notification | "Low battery. Low self-esteem. Charge one." |
 | Notification | "3 people viewed your profile. They left." |
+| Notification | "Your face has been updated. Restart required." |
+| Notification | "Front Camera would like to access: everything." |
+| Notification | "Storage full: 40,000 photos of the same angle." |
+| Notification | "Reminder: you have not been perceived in 6 hours." |
 
 ### Elevator (every ride)
 | Type | Text |
@@ -286,6 +333,9 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 | Plaque | "Max capacity: 8 people or 1 ego." |
 | Plaque | "In case of fire, check your angles." |
 | Plaque (scratched) | "going down again?? why" |
+| Plaque | "Please face the doors. Not the mirror. THE DOORS." |
+| Plaque | "Do not press every button. We know it was you, Clav." |
+| Button panel | Floor 5 button is worn smooth; the 10 button is a sticker |
 
 ---
 
@@ -323,6 +373,105 @@ Readable text on the walls is the cheapest comedy in the game: one decal each. P
 
 ### Kevin's lines (see SCRIPT.md, `ORTHO_` IDs)
 "I had headgear in Year 8. I'm not going back." · "Is that… an expander? Why is it in a jar? Why is it *moving*?" · "Please stop cranking it near me." · "Nope. Rubber bands. I'm out." · "That smile is held open by metal. Nobody's that happy."
+
+---
+
+## 14. Elevator ads (screen between floors)
+
+A small CRT screen in the elevator plays one fake ad per ride while the next floor loads. Voiced by the Concierge. Line IDs in [SCRIPT.md](SCRIPT.md) (`AD_`). The last ride (7 → 8) has no ad: the screen shows only Kevin's reflection and "Loading…". Cost **M**, priority ★★.
+
+| Ride | Ad | On screen |
+| --- | --- | --- |
+| 1 → 2 | **Jaw Juice** | A green bottle spinning on a pedestal. That's the whole ad. |
+| 2 → 3 | **The Forward Collection** | Grandpa Meow's jars, slow pan, harp music |
+| 3 → 4 | **Practice Helmets** | A helmet getting bonked in slow motion, each dent labelled "progress" |
+| 4 → 5 | **Rate-A-Mate** | A dating app where every profile is just a number |
+| 5 → 6 | **Before Photo Removal Service** | Movers carrying a framed Before Photo into a living room and hanging it |
+| 6 → 7 | **Lathered Routine, Deluxe** | A 14-step routine chart. It unfolds. It's 28 steps. It unfolds again. |
+
+## 15. Loading screen tips (`TIP_`)
+
+Shown on loading screens, the pause menu and the death screen footer. Half are useful, half are jokes. Never show the same tip twice in a row.
+
+| ID | Tip |
+| --- | --- |
+| `TIP_001` | Ring lights heal you. Stand in them. Don't make it weird. |
+| `TIP_002` | Mouth Breathers are blind. They can hear you panic, though. |
+| `TIP_003` | Double Chin Blobs split when hit. Aim chin-up. |
+| `TIP_004` | Bone Smash makes your head bullet-proof for 20 s. Your feelings, sadly, are not. |
+| `TIP_005` | Cut the Headgear's bands with scissors. Do not try with your teeth. |
+| `TIP_006` | Expander Spiders hate light. So do Ghouls. So does Kevin, before 9 AM. |
+| `TIP_007` | Ghouls lose interest if you stand still. They have the attention span of a feed. |
+| `TIP_008` | Water heals 0.25. It also heals nothing else. It's just water. |
+| `TIP_009` | The ticket machine will always print 5. Stop pressing it. |
+| `TIP_010` | Keep mannequins in view. They don't move when watched. Same as Kevin at parties. |
+| `TIP_011` | Touch Grass can be used once per run. Choose wisely. Or just go outside. |
+| `TIP_012` | Your rating is your health. 0.0 means hoodie. |
+| `TIP_013` | Smile Flash stuns. It also blinds anyone taking a selfie nearby. Bonus. |
+| `TIP_014` | Brenda is on her break. Do not disturb Brenda. |
+| `TIP_015` | Sunrise is at 6:00 AM. The barber opens at 9. Plan accordingly. |
+| `TIP_016` | Turning off the jump scare setting will not make the Concierge any nicer. |
+
+## 16. Item flavour text (inventory)
+
+Every pickup has one line of description in the inventory. All items are clearly fake (CLAUDE.md rule 4).
+
+| Item | Effect | Description |
+| --- | --- | --- |
+| Ticket "5" | Key item | "Your number. It was always going to be your number." |
+| Jaw Juice | +0.5 rating | "Green. Fizzy. Ingredients list just says 'jaw'." |
+| Sheet Mask | +1.0 rating over 10 s | "Makes you look like a ghost. In a spa way." |
+| Cucumber Slices | See in the dark 15 s | "Night vision, but make it salad." |
+| Ring Light Battery | Recharges the phone torch | "Lighting is 90% of a face. The other 10% is also lighting." |
+| Scissors | Cuts Headgear bands | "Safety scissors. Nothing about tonight is safe." |
+| Mouth Tape | 30 s total silence | "A trend, apparently." |
+| Grandpa's Gum (40 kg) | Given at the end of F2; throw it to block a door or distract a Ghoul | "It's a brick. Grandpa says it's a journey." |
+| Fried Egg | +0.25 rating | "Fried by a stare. Still warm. Protein!" |
+| Practice Helmet | Blocks one hammer hit | "Pre-dented for your convenience." |
+| Sandwich-shop flyer | Collectible (1 of 8) | "Two for one on Tuesdays. A normal place for normal people." |
+| Brenda's Name Badge | Collectible | "BRENDA · Reception · Since 1997 · Do not wake" |
+
+## 17. Kevin's phone
+
+Kevin's phone is the torch, the map and the menu. Opening it pauses nothing (horror), so it's always a risk.
+
+| Detail | Cost | Priority |
+| --- | --- | --- |
+| Home screen: 4% battery the whole game (the battery icon is the torch meter) | S | ★★★ |
+| Apps: **Map**, **Torch**, **GLOW UP GANG** (group chat), **Gallery**, **Weather** ("Indoors. Forever.") | M | ★★ |
+| Gallery has one photo at the start: Kevin's last haircut. Each floor adds a blurry photo of something scary he "accidentally" took | S | ★★ |
+| The Map app is a photo of the fire-escape plan, taken badly, at an angle | S | ★★★ |
+| Notifications from the Concierge appear as push alerts: "Ascension Clinic: How are we doing? Rate us 1–10." Tapping "1" makes the lights flicker | S | ★★ |
+| Barbershop app: "Your appointment: 9:00 AM." The countdown is visible on the lock screen | S | ★ |
+| If you open the front camera on your phone in L8, the boss notices you (instant aggro). Kevin: "Wrong camera. WRONG CAMERA." | S | ★★ |
+
+## 18. Field Guide (enemy entries)
+
+Unlocked the first time you meet each enemy. Written by an anonymous former patient, in pencil. Shown in the pause menu.
+
+| Enemy | Entry |
+| --- | --- |
+| Sub-5 Ghoul | "Used to be patients. Now they scroll. Grey hoodie, no face, infinite feed. If they catch you, they'll show you their rating. Don't look." |
+| Double Chin Blob | "Splits when hit. Each half is angrier and squeakier. I hit one six times once. I regret it." |
+| Recessed Chin Crawler | "Hangs from the ceiling. Drips before it drops. If it's raining indoors, it isn't rain." |
+| Mouth Breather | "Can't see. Hears everything. Breathe through your nose. Grandpa was right about ONE thing." |
+| Mirror Self | "It's you, but a beat late. It copies your emotes. Don't wave. It will wave back. Forever." |
+| The Headgear | "I had one in Year 8. It came back for me. It's blind. It follows the creak. Bring scissors." |
+| Expander Spider | "Clicks faster when it's close. If it gets on your face, everything goes wide. Shake it off. Shake HARD." |
+| Retainer Chatterer | "Harmless alone. There is never just one." |
+| Brace Face | "Only moves when you look away. Smiles wider every time. Nobody is that happy." |
+| The Front Camera | "I'm not going to write about it. You'll know." |
+
+## 19. Sound and physics gags
+
+| Detail | Cost | Priority |
+| --- | --- | --- |
+| Throwing a hand mirror makes it spin and land face-up every time ("It always finds its light") | S | ★★ |
+| Hammers on the F3 pegboard rattle in sequence when a press slams, like wind chimes | S | ★ |
+| Every door in the clinic squeaks in a slightly different musical note; on F7 they play the elevator tune in order | M | ★ |
+| Ghouls' phones vibrate on tables when Kevin's phone gets a notification (they're all in the same group) | S | ★★ |
+| Spa floor: running makes Kevin slide 2 m further than expected, with a squeak | S | ★★ |
+| Stepping on a retainer makes the same click as a TV remote; one random TV turns on | S | ★ |
 
 ---
 

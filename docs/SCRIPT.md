@@ -892,6 +892,15 @@ Target for v1: ~30 per playable character. Below is the starting set; write more
 | Before Form (power) | "Nobody look at me. Easy. Story of my life." |
 | Ortho Dread (near orthodontic gear) | "Nope." · "Too many brackets." · "I can hear it tightening." · "Year 8 flashbacks. Year 8 flashbacks." · "Why is everything here a mouth?" |
 | Retainer Chatterers swarm | "They're clacking. Why are they clacking." · "Stomp. Stomp. Sorry. Stomp." |
+| Reads a wall joke (stares 3 s) | "...Okay, that one was decent." · "Who writes these." · "I hate that I laughed." |
+| Enters a safe room (ring light) | "Light. Good light. Sitting down for one second." · "Ah. Flattering." |
+| Door won't open | "Locked. Course it is." · "Do I need a jawline to open this?" |
+| Phone battery low | "Four percent. Same as always. Somehow." · "Torch, please, don't die on me." |
+| Finds a sandwich-shop flyer | "A normal place. For normal people. I miss it." |
+| Mirror shows him a beat late | "...I moved first. I definitely moved first." |
+| Picks up a Sheet Mask | "If I die in this, I die moisturised." |
+| Elevator doors close | "Going up. Emotionally, down." · "Elevator music. My only friend." |
+| Hears the Headgear creak | "No. No no no. Year 8 is OVER." |
 
 ### Clavicoolar (`CLAV`)
 | Situation | Lines |
@@ -984,6 +993,22 @@ Kevin's phone shows the allies' texts in a corner pop-up during gameplay (no voi
 
 ---
 
+## ELEVATOR ADS (`AD_`)
+
+Voiced by the Concierge in a bright ad voice. Visuals in [DETAILS.md §14](DETAILS.md). Each ad is under 15 s.
+
+| ID | Ride | Line |
+| --- | --- | --- |
+| `AD_001` | 1 → 2 | "Jaw Juice. It's green. ...That's it. That's the ad." |
+| `AD_002` | 2 → 3 | "The Forward Collection, by Grandpa Jon Meow. Your face, but forwarder. Jars sold separately. Jars sold never." |
+| `AD_003` | 3 → 4 | "Practice Helmets. Pre-dented. Because progress should be visible." |
+| `AD_004` | 4 → 5 | "Rate-A-Mate. No photos. No bios. Just numbers. Find your five today." Kevin: "I'm already a five." Concierge: "Exactly." |
+| `AD_005` | 5 → 6 | "Lost your Before Photo? We'll find it. We'll frame it. We'll hang it where you'll see it every morning." |
+| `AD_006` | 6 → 7 | "Lathered Deluxe. The fourteen-step routine, now in twenty-eight steps. Showering not included. Showering is step twenty-nine." |
+| `AD_007` | 7 → 8 | *(no ad; static, then silence. Screen: "Loading…")* |
+
+---
+
 ## THE CONCIERGE — random announcements (`PA_`)
 
 Play every 2–4 minutes on any floor (not during dialogue). Pick randomly, never repeat in the same run.
@@ -1004,9 +1029,22 @@ Play every 2–4 minutes on any floor (not during dialogue). Pick randomly, neve
 | `PA_012` | "Attention: a Chico has been sighted. No, you didn't." |
 | `PA_013` | "Rate your night out of ten. Your answer has been rounded down." |
 | `PA_014` | "The elevator is working. The elevator is judging. These are not mutually exclusive." |
+| `PA_015` | "This clinic is a parody. Any resemblance to real people is… honestly, a little concerning." |
 | `PA_016` | "Reminder: wear your headgear twenty-two hours a day. The other two hours, it wears you." |
 | `PA_017` | "The Forward Collection is now open. Please do not tap on the jars. They tap back." |
-| `PA_015` | "This clinic is a parody. Any resemblance to real people is… honestly, a little concerning." |
+| `PA_018` | "Reminder: mirrors are for staff use only. You are not staff. You are content." |
+| `PA_019` | "The ring lights in Corridor B are flickering. This is a feature." |
+| `PA_020` | "Attention patients: hunter eyes may now be collected from the front desk. Please bring your own eyes." |
+| `PA_021` | "We have received a complaint about the humming. The humming has received a complaint about you." |
+| `PA_022` | "Today's lucky number is five. Today's unlucky number is also five." |
+| `PA_023` | "Please stop asking Brenda for directions. Brenda is a skeleton. Respect her boundaries." |
+| `PA_024` | "Customer survey: on a scale of one to ten, how would you rate being rated?" |
+| `PA_025` | "The elevator has been cleaned. The elevator has also been rated. It got a four." |
+| `PA_026` | "Lost and found update: we've found one more retainer. It's looking for you." |
+| `PA_027` | "Sunrise is approaching. Please hurry. Or don't. We also have rooms." |
+| `PA_028` | "For your safety, do not run in the spa. For our entertainment, please run in the spa." |
+| `PA_029` | "A reminder that the Exit Mirror only shows people who deserve to leave. No pressure." |
+| `PA_030` | "This announcement was rated a seven. You'd know if you were a seven." |
 
 ---
 
@@ -1028,6 +1066,18 @@ Big title: **NGMI**. Under it, one random line:
 | `DEATH_010` | "Not Gonna Make It. This time." |
 | `DEATH_011` | "Pulled in by the Headgear. Year 8 called." |
 | `DEATH_012` | "Tip: Expander Spiders hate light. So do you, apparently." |
+| `DEATH_013` | "Rated 0 out of 10 by the floor. The floor has standards." |
+| `DEATH_014` | "Tip: the Headgear is blind. You, apparently, are too." |
+| `DEATH_015` | "You looked away from a mannequin. Classic." |
+| `DEATH_016` | "Slipped on foam. Dylan would be proud. Dylan would also be filming." |
+| `DEATH_017` | "Your rating has been rounded down. To zero." |
+| `DEATH_018` | "Kevin has left the group chat." |
+| `DEATH_019` | "Battery 4%. Rating 0%. Vibes 0%." |
+| `DEATH_020` | "Cause of death: read the comments." |
+| `DEATH_021` | "The barber opens at 9. You won't." |
+| `DEATH_022` | "Tip: stand in the ring light. It's right there. It was always right there." |
+| `DEATH_023` | "Mogged by your own reflection. It was a beat late, but it got there." |
+| `DEATH_024` | "Brenda has seen worse. Brenda has seen everything." |
 
 Button labels: **[Try again]** shows as "Re-maxx" · **[Quit]** shows as "Cope".
 
