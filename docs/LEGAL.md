@@ -41,5 +41,5 @@ The cast is inspired by real looksmaxxing influencers. Using real names, faces o
 
 ## 5. Repo
 
-- Keep this repository **private** (it may contain licensed assets that can't be redistributed).
+- Keep this repository **private** (it may contain licensed assets that can't be redistributed). Exception: owner-approved public window 2026-11-17 → 2026-11-24 (D11). During it, **don't commit any Fab/Megascans or paid assets**, and remember the internal "Inspired by" column in CHARACTERS.md is public too.
 - Never commit API keys, tokens or passwords.
