@@ -815,7 +815,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### 7.5 Elevator ride 7 → 8 (no music)
 
-*[The muzak is gone. The group chat stops loading: "No signal". ⚡**JS_21** the lights cut, and the Concierge whispers right next to Kevin's ear (binaural audio).]*
+*[The muzak is gone. The group chat stops loading: "No signal". On the map, the "Sam is watching" dot from the drive goes grey. ⚡**JS_21** the lights cut, and the Concierge whispers right next to Kevin's ear (binaural audio).]*
 
 `[E7_CON_001]` **CON**: "You weren't supposed to get this far."
 `[E7_CON_002]` **CON**: "Nobody gets this far. They all stop at a mirror somewhere and they just… stay."
