@@ -26,7 +26,7 @@ Both are beginner-to-intermediate. Explain technical things simply, give complet
 4. **Bone smashing / "hardmaxxing" are cartoon slapstick only.** Never present them as real advice, never add realistic injury detail, never include real substances, injections, peptides or steroids as items. Use clearly fake items (e.g. "Jaw Juice").
 5. **Every third-party asset needs a license record** in `docs/ASSETS.md` (source URL, license, date) before it is committed.
 6. **Mic features process audio locally only.** Never design anything that uploads or stores player voice.
-7. **Keep the repo private.** Don't add public links, telemetry, or secrets.
+7. **Repo visibility:** private by default. The owner approved a **temporary public window, 2026-11-17 → 2026-11-24** (see `docs/DECISIONS.md` D11). While public, assume anyone can read and copy everything in it. Don't add telemetry or secrets, ever.
 8. **Never commit secrets** (API keys, tokens, passwords). Use environment variables or UE config not committed.
 9. **Never force-push `main`** or rewrite shared history. Work on a branch, open a PR.
 10. **Locked decisions** in `docs/DECISIONS.md` are not changed without the owner's explicit OK. If a request conflicts with one, say so and ask.
@@ -54,7 +54,9 @@ Bad: anything that names a real person or mocks a real person's appearance.
 | Whole design | `docs/GAME_DESIGN.md` |
 | Characters, abilities, lines, code IDs | `docs/CHARACTERS.md` |
 | Floors / level design | `docs/LEVELS.md` |
-| Dialogue / cutscenes / endings | `docs/SCRIPT.md` |
+| Dialogue / cutscenes / endings (line IDs = VO file names) | `docs/SCRIPT.md` |
+| Small touches, easter eggs, achievements | `docs/DETAILS.md` |
+| Jump scares (IDs match ⚡JS_xx in the script) | `docs/JUMPSCARES.md` |
 | Assets to get, licenses | `docs/ASSETS.md` |
 | Look & lighting values | `docs/ART_DIRECTION.md` |
 | Paid content rules | `docs/MONETIZATION.md` |

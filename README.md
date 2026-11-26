@@ -8,7 +8,7 @@
 
 **Status:** pre-production (design + asset sourcing). No UE5 project yet.
 **Owner:** [@devspideyy](https://github.com/devspideyy) · **Collaborator:** [@rexyysilent](https://github.com/rexyysilent)
-**Repo visibility:** private. Do not make it public (see [Legal](docs/LEGAL.md)).
+**Repo visibility:** private by default. Temporarily public 2026-11-17 → 2026-11-24 by the owner's choice (see [DECISIONS](docs/DECISIONS.md) D11).
 
 ---
 
@@ -43,7 +43,7 @@
 | **Tone** | Every character treats jawlines as life or death. The joke is how serious they are |
 | **Setting** | *The Ascension Clinic*: an abandoned 24/7 looksmaxxing clinic, rusty, flooded with green ring-light glow. Neon sign: "ASCENSION CLINIC – NO REFUNDS" |
 | **Goal** | Reach the **Exit Mirror** on the top floor before 6:00 AM without your **Face Rating** hitting 0 |
-| **Cast** | 11 parody characters inspired by looksmaxxing influencers, with **changed names** (e.g. Clavicoolar, Kareem Shammy, Dr. Mike Meow) |
+| **Cast** | 11 parody characters inspired by looksmaxxing influencers, with **changed names** (e.g. Clavicoolar, Kareem Shammy, Dr. Mike Meow). 5 are allies who give Kevin powers; 4 are bosses, hooked by the clinic and freed when beaten |
 | **Signature gag** | Clavicoolar bone-smashes his own face with a hammer; for 20 s headshots do 0 damage and bullets bounce off with a "TOO MUCH BONE" ping |
 | **Business** | Paid base game + paid hero (Dr. Mike Meow) + cosmetics + seasonal pass. Paid heroes are side-grades, never pay-to-win |
 | **Virality** | Shareable Rating Cards, one-key clips ("Mog Cam"), Twitch/Kick chat-controlled scares, mic-reactive monsters, rare "Chico" cryptid sightings |
@@ -91,7 +91,9 @@ ngmi/
 │   ├── GAME_DESIGN.md         ← full GDD: concept, player, cast, enemies, levels, script, systems
 │   ├── CHARACTERS.md          ← every character: role, gimmick, abilities, lines, code IDs
 │   ├── LEVELS.md              ← all 8 floors in detail, with UE5 build notes
-│   ├── SCRIPT.md              ← opening cutscene, boss intros, endings (dialogue)
+│   ├── SCRIPT.md              ← full campaign script with line IDs: prologue, 8 floors, endings, barks
+│   ├── DETAILS.md             ← little details: UI, audio, wall jokes, ortho horror, easter eggs, achievements
+│   ├── JUMPSCARES.md          ← all 22 jump scares: trigger, scare, the laugh after
 │   ├── ASSETS.md              ← asset sourcing list for UE5 realistic (what to get, from where, license)
 │   ├── ART_DIRECTION.md       ← lighting, colour grade, materials, reference values
 │   ├── MONETIZATION.md        ← what is sold, rules for fairness
@@ -117,6 +119,8 @@ The UE5 project itself does not exist yet. When it is created it goes in `/Game/
 | --- | --- |
 | Understand the whole game | [docs/GAME_DESIGN.md](docs/GAME_DESIGN.md) |
 | Write dialogue, barks, or a character | [docs/CHARACTERS.md](docs/CHARACTERS.md) + [docs/SCRIPT.md](docs/SCRIPT.md) |
+| Add polish, jokes, easter eggs, achievements | [docs/DETAILS.md](docs/DETAILS.md) |
+| Place or tune a jump scare | [docs/JUMPSCARES.md](docs/JUMPSCARES.md) |
 | Build or block out a level | [docs/LEVELS.md](docs/LEVELS.md) + [docs/ART_DIRECTION.md](docs/ART_DIRECTION.md) |
 | Find or buy assets | [docs/ASSETS.md](docs/ASSETS.md) |
 | Check if a joke, name or asset is allowed | [docs/LEGAL.md](docs/LEGAL.md) |
@@ -216,7 +220,7 @@ Task breakdown: [docs/ROADMAP.md](docs/ROADMAP.md).
 3. **Never joke about real people's real-life legal or medical events.**
 4. **Every third-party asset must have a recorded license** in `docs/ASSETS.md`.
 5. **Mic audio stays on the player's machine.** Never upload it.
-6. **Keep this repo private.**
+6. **Keep this repo private** outside the owner-approved public window (D11).
 
 Details: [docs/LEGAL.md](docs/LEGAL.md).
 
