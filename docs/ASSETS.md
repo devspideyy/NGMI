@@ -32,6 +32,16 @@ Legend — Tier: **Core free** / **Paid upgrade** / **Make in-house** · Status:
 | Make in-house | L8 | Final boss arena: giant phone | Blender | — | Ours | | To get |
 | Make in-house | L2 | Tongue-posture puzzle doors | Blender | — | Ours | | To get |
 
+### In-house prop pack and fonts (added 2026-11-26)
+
+| Item | Source | License | Date | Where |
+| --- | --- | --- | --- | --- |
+| 79 props + Headgear (`art/props/`) | Made by us (Blender scripts in `art/blender/`) | Ours | 2026-11-26 | All floors |
+| Bebas Neue | https://fonts.google.com/specimen/Bebas+Neue | SIL OFL 1.1 | 2026-11-26 | 3D sign text |
+| Permanent Marker | https://fonts.google.com/specimen/Permanent+Marker | Apache 2.0 | 2026-11-26 | 2D decals |
+| Rock Salt | https://fonts.google.com/specimen/Rock+Salt | Apache 2.0 | 2026-11-26 | 2D decals |
+| Special Elite | https://fonts.google.com/specimen/Special+Elite | Apache 2.0 | 2026-11-26 | 2D decals, notes |
+
 ### Poly Haven test materials (used in the web preview)
 
 All CC0, 2K JPG (diffuse, normal GL, roughness). Download with `tools/download_textures.sh`.

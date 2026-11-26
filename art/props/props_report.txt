@@ -1,0 +1,18 @@
+NGMI prop pack — real-world scale (metres), origin at bottom centre
+
+SM_PalateExpander      5572 tris   0.06 x 0.04 x 0.01 m   L2 jars, Dr. Meow, item
+SM_SpecimenJar         7360 tris   0.12 x 0.12 x 0.19 m   L2 Expander Wall (instance)
+SM_ExpanderSpider     11700 tris   0.47 x 0.25 x 0.20 m   Enemy L2/L4
+SM_Retainer            8800 tris   0.06 x 0.04 x 0.01 m   L1 Lost & Found, Retainer Chatterer
+SM_DentalChair         3964 tris   1.02 x 1.60 x 2.02 m   L4 'The Chair' chase
+SM_RingLight           5192 tris   0.70 x 0.61 x 2.02 m   Safe rooms, all floors
+SM_TicketMachine       2848 tris   0.40 x 0.40 x 1.25 m   L1 check-in
+SM_JawJuice            2292 tris   0.08 x 0.08 x 0.26 m   Item, vending machine
+SM_BonkHammer          2408 tris   0.19 x 0.12 x 0.53 m   L3 Clavicoolar (cartoon)
+SM_PracticeHelmet      4776 tris   0.34 x 0.41 x 0.12 m   L3 shelf, item
+SM_GiantCalipers       2420 tris   0.94 x 0.13 x 2.00 m   L4 wall hazard
+SM_HandMirror          1220 tris   0.14 x 0.03 x 0.29 m   Item, L7
+SM_Tombstone          13460 tris   0.80 x 0.30 x 1.20 m   L5 graveyard
+SM_ElevatorCRT         1912 tris   0.46 x 0.59 x 0.58 m   Elevator ads
+SM_KevinPhone          1084 tris   0.07 x 0.01 x 0.15 m   Torch / map / UI
+SM_MouthTape            972 tris   0.06 x 0.07 x 0.03 m   Item L2
