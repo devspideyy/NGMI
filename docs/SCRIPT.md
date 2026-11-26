@@ -1,6 +1,6 @@
 # NGMI — Full Script (v2)
 
-Last updated: 2026-11-17 · Status: first full draft, ready for table-read
+Last updated: 2026-11-26 · Status: v3, prologue drive added, ready for table-read
 
 This is the whole campaign, scene by scene: prologue, 8 floors, the elevator rides between them, boss fights, 5 endings (one secret) and a post-credits scene. Then the reusable lines: barks, clinic announcements and death-screen lines.
 
@@ -52,7 +52,9 @@ Kevin keeps **Touch Grass** (once-per-run full heal) as his own ultimate. By Flo
 
 | Gag | Set up | Pays off |
 | --- | --- | --- |
-| "I just wanted a haircut" | Prologue | Post-credits barbershop scene |
+| "I just wanted a haircut" | Prologue (closed barbershop notification) | Post-credits barbershop scene |
+| The Mid-Mobile (Kevin's car) | Prologue drive; parking ticket "5" | Waiting outside in every ending; drives to the barber in post-credits |
+| Sam's live location | Prologue drive texts | Elevator 7 → 8: "No signal" — nobody is watching now |
 | Kevin's ticket number is **5** ("Mid") | L1 check-in; the machine prints 5 again after Brenda | L8: the Concierge calls "Number 5" one last time; Kevin rips the ticket |
 | Sandwich-shop loyalty card (9 of 10 stamps) | L1 Business Card Duel | L7 sandwich walk; Ascend ending's tenth stamp |
 | Grandpa's 40 kg gum quest | L2 | L8: Kevin uses the gum to jam the Front Camera's lens |
@@ -68,15 +70,100 @@ Jump-scare placements for every floor: [JUMPSCARES.md](JUMPSCARES.md). In this s
 
 ## PROLOGUE — "Free Consultation"
 
-*[Black screen. A phone vibrates. Lock screen: 2:47 AM. A notification slides in: "ARE YOU A 5? 👀 FREE JAWLINE CONSULTATION. TONIGHT ONLY."]*
+The game opens on the road, not at the door. Kevin **drives himself** to the Ascension Clinic at 3 AM, alone, down a road that gets worse the closer he gets. The player hears about the place, then sees it, then walks to it, long before anything happens. Then it swallows him. About 6 minutes, fully playable, no combat.
+
+### P.1 The notification (cold open)
+
+*[Black screen. A phone vibrates on a desk. Lock screen: 2:47 AM. Notification: "ARE YOU A 5? 👀 FREE JAWLINE CONSULTATION. TONIGHT ONLY."]*
 
 `[P_CON_001]` **CON** *(too cheerful, from the phone)*: "Are you a five? Want to be a ten? Free jawline consultation. Tonight only. Ascension Clinic."
 
-*[Kevin, in a grey hoodie, stands on a wet street. A building glows sick green. Neon: ASCENSION CLINIC — OPEN 24/7 — NO REFUNDS. One letter flickers so it briefly reads "NO REFUND".]*
+*[Second notification: "Fade & Fresh Barbers — CLOSED until 9 AM". Kevin's thumb hovers over it. Then he taps the clinic ad. A map opens: 38 min away, out of town, up a hill.]*
+
+`[PD_KEV_001]` **KEV**: "It's a haircut. They'll have scissors. Probably."
+
+### P.2 The drive (gameplay)
+
+*[First person, inside Kevin's car: a dented grey hatchback with one working wiper. Rain. The phone sits in a dashboard clip, running the map. A pine-tree air freshener spins. The car's sticker on the windscreen: "MID-MOBILE" (his friend Sam wrote it).]*
+
+**Controls:** steer, wipers, radio, horn. The road is on rails (you can't crash), but you can look around freely. The point is atmosphere: the player's hands are busy, the scares come from outside.
+
+`[PD_GPS_001]` **GPS** *(normal robot voice)*: "Continue on Route 9 for 31 kilometres."
+
+**The radio** (press to change station, 4 stations, each loops one short bit):
+- `[PD_RADIO_001]` **RADIO 1** *(late-night ad)*: "Jaw Juice. It's green. That's the whole ad."
+- `[PD_RADIO_002]` **RADIO 2** *(podcast, two men whispering)*: "…and that's why I haven't opened my mouth since March." "Mm." "Exactly."
+- `[PD_RADIO_003]` **RADIO 3** *(classical)*: *[A violin plays beautifully. A calm voice cuts in:]* "This symphony: four out of ten."
+- `[PD_RADIO_004]` **RADIO 4** *(static, then the Concierge, too close to the mic)*: "We can see your headlights, Kevin. Drive safe. We need your face intact."
+`[PD_KEV_002]` **KEV**: "How does the radio know my name."
+
+**The group chat** (Kevin's real friend, before GLOW UP GANG exists; shown on the dash phone):
+`[PD_TXT_001]` **SAM:** "bro its 3am"
+`[PD_TXT_002]` **SAM:** "you're driving to a FACE clinic. for a HAIRCUT??"
+`[PD_TXT_003]` **SAM:** "share location"
+*[Kevin taps "Share live location". The map now shows a little dot labelled "Sam is watching". Pays off in the elevator to Floor 8, when it says "No signal".]*
+
+**Billboards.** Every two minutes the headlights catch a billboard by the road. They get worse:
+1. "ASCENSION CLINIC — 30 KM. ARE YOU A 5?"
+2. "20 KM. THE DOOR TO A NEW YOU." (a photo of a nice door)
+3. "10 KM. WE'VE ALREADY STARTED THE CONSULTATION." The billboard has a camera on top. It turns to follow the car.
+4. Blank billboard with a ring light. As the car passes, it flashes. A number appears where the ad should be: **5**.
+`[PD_KEV_003]` **KEV**: "Did a billboard just rate me?"
+
+**The GPS changes voice.** Halfway, the robot voice glitches into the Concierge.
+`[PD_GPS_002]` **GPS → CON**: "In 200 metres, turn left. Then fix your posture."
+`[PD_GPS_003]` **CON**: "You are now leaving signal. Don't worry. We have Wi-Fi. Password: ratemeplease."
+`[PD_KEV_004]` **KEV**: "I'm turning this off." *[He taps the phone. The map stays on.]* "…It won't turn off."
+
+⚡**JS_00** *[Forest road. The wiper squeaks. Headlights hit something in the middle of the road: a grey hunched figure on all fours, hood up. Kevin slams the brakes. Tyres scream. The car stops a metre away. The figure doesn't move. Slowly, it turns its head into the headlights. Its face is completely, terrifyingly average.]*
+*[Beat. It holds up its phone and takes a selfie, using the headlights as a ring light.]*
+`[PD_GHOUL_001]` **GHOUL** *(mumbling)*: "Thanks for the light." *[It crawls off into the trees.]*
+`[PD_KEV_005]` **KEV**: "…You're welcome?"
+
+**No way back.** If the player stops and tries to turn around:
+`[PD_GPS_004]` **CON**: "Recalculating…" *[The road behind the car is the same road. The same billboard. The same tree.]* "Recalculating…" "There is no other route, Kevin. There is only up."
+*[Every turn-around loops back to the clinic road. (This is NOT the Touch Grass secret; that one happens at the front door.)]*
+
+### P.3 The hill
+
+*[The trees open up. On top of a hill: a huge old hospital building, Victorian brick with a cheap glass-and-chrome front glued onto it. Every window is dark except one, glowing green. The road ends at iron gates. A sign on them: "ASCENSION CLINIC — FORMERLY ST. AGATHA'S HOSPITAL — FORMERLY A SPA — FORMERLY ST. AGATHA'S AGAIN".]*
+
+`[PD_KEV_006]` **KEV**: "Oh good. It's been three things. All of them haunted."
+
+*[The gates are chained. An intercom on a pole. Kevin presses it.]*
+`[PD_CON_001]` **CON** *(through the intercom, instantly)*: "Welcome! Please park in the visitor bay. Leave the keys. You won't need the car."
+`[PD_KEV_007]` **KEV**: "I'm keeping the keys."
+`[PD_CON_002]` **CON**: "Everybody says that."
+*[The chain drops by itself. The gates creak open.]*
+
+### P.4 The car park (gameplay, on foot)
+
+*[Kevin parks. He takes the phone out of the dash clip: it's his torch for the rest of the game. Battery: 4%. It will say 4% for the whole game.]*
+
+**Gameplay:** walk to the entrance through the car park. Fog, rain, the green window up high. The car park is full of other people's cars, all covered in dust and leaves. Each one is a small story the player can look into with the torch:
+- A sports car with a ring light still glowing on the dashboard. On the seat: a printed schedule. "Week 1: skincare. Week 2: posture. Week 30: still here."
+- A car full of sticky notes on the inside of the windscreen, all saying "you're a 6", "you're a 6", "you're a 6", and one at the bottom: "you're a 5.9".
+- A minivan with a child seat and a bag of shopping, the milk long gone off. The receipt is dated 1997. (Brenda's car. Pays off on Floor 1.)
+- A security booth. The guard's logbook is open (collectible note, see below).
+- A parking ticket on Kevin's own windscreen the moment he walks away from it. **Ticket number: 5.**
+`[PD_KEV_008]` **KEV**: "I've been parked for nine seconds."
+
+**Collectible — the guard's log** (the first note in the game; voiced by nobody, shown as text):
+> *Night 1. Patient asked to borrow a mirror. Gave it.*
+> *Night 12. They all ask for mirrors now. Ran out of mirrors.*
+> *Night 30. The building asked for a mirror. Over the intercom. I said no.*
+> *Night 40. I asked for a mirror.*
+> *Night 41. Going in for a quick consultation. Back in five.*
+
+`[PD_KEV_009]` **KEV** *(reading)*: "'Back in five.' That's not a good sign."
+
+### P.5 The door
+
+*[The front of the clinic. The neon sign buzzes: ASCENSION CLINIC — OPEN 24/7 — NO REFUNDS. The F flickers dead, so it briefly reads "NO RE_UNDS". Across the empty road, back down the hill, the town is dark. Somewhere down there, the barbershop sign says CLOSED.]*
 
 `[P_KEV_001]` **KEV**: "Bro, I just wanted a haircut."
 
-*[He looks at the barbershop across the street. Sign: CLOSED. He looks back at the clinic. The automatic doors open by themselves. He sighs and walks in.]*
+*[The automatic doors open by themselves. Warm air rolls out. It smells like moisturiser. Kevin looks back at his car. Its headlights flash once, by themselves, like a goodbye. He sighs and walks in.]*
 
 *[Doors slam. A ring light switches on above him with a heavy CLUNK. Green floods the room.]*
 
@@ -91,7 +178,11 @@ Jump-scare placements for every floor: [JUMPSCARES.md](JUMPSCARES.md). In this s
 
 *[A ticket machine spits out a ticket: 5. Title card: **NGMI**.]*
 
----
+**Design notes for the drive**
+- **Why it's there:** like the opening of the great found-footage asylum games, the player *chooses* to go. They see the building from far away, hear about it, and walk up to it. By the time the doors shut, they already feel stuck.
+- **Pacing:** 1 min notification + start · 3 min road (radio, texts, billboards, JS_00) · 1 min gate · 2 min car park · 30 s door. No combat, one jump scare, three laughs.
+- **What it sets up:** the torch (phone, 4%), "Mid-Mobile" (the car is waiting in every ending), ticket 5 (twice now), Brenda's 1997 minivan, Sam's live location (cut off before Floor 8), the guard who went in "for five minutes".
+- **Assets:** car interior (Fab vehicle pack, re-dressed), Route 9 forest road (Megascans trees, wet asphalt), 4 billboards (our sign decals), the hill + gate, the car park (6 dressed cars), security booth. All realistic, rain and fog, green-tinted.
 
 ## FLOOR 1 — The Waiting Room
 
@@ -827,13 +918,13 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ### Normal ("Fine")
 
-*[Kevin walks out into the sunrise. He takes the Before Photo out of his pocket. Looks at it. Looks at his reflection in a shop window.]*
+*[Kevin walks out into the sunrise, to the Mid-Mobile. The parking ticket is still on the windscreen. He takes the Before Photo out of his pocket. Looks at it. Looks at his reflection in a shop window.]*
 `[END_N_KEV_001]` **KEV**: "Yeah. Still us."
 **CARD:** "YOU'RE FINE. Go to bed."
 
 ### Touch Grass (secret)
 
-*[Credits start immediately. Kevin sits on the grass outside the clinic. Birdsong. The clinic sign flickers behind him.]*
+*[Credits start immediately. Kevin sits on the grass by his car, keys still in his hand. Birdsong. The clinic sign flickers behind him.]*
 `[END_T_CON_001]` **CON** *(faint, from inside)*: "…Hello? The consultation?"
 `[END_T_KEV_001]` **KEV**: "Nah."
 **CARD:** "You were always fine. NGMI? Nah. You made it."
@@ -842,7 +933,7 @@ If the player walks back out of the front door within 60 seconds of the prologue
 
 ## POST-CREDITS — "Just a trim"
 
-*[Morning. The barbershop across the street. Sign: OPEN. Kevin sits in the chair.]*
+*[Morning, back in town. Kevin parks the Mid-Mobile outside Fade & Fresh Barbers. Sign: OPEN. The parking ticket from the clinic is still stuck to the windscreen: 5. He sits in the chair.]*
 `[POST_BARB_001]` **BARBER**: "What are we doing today?"
 `[POST_KEV_001]` **KEV**: "Just a trim."
 `[POST_BARB_002]` **BARBER**: "Sure thing." *(snip, snip)* "…Want me to do anything about the jaw?"

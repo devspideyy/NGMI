@@ -2,7 +2,7 @@
 
 Last updated: 2026-11-17
 
-22 placed jump scares across the campaign. Each one is marked **⚡JS_xx** in [SCRIPT.md](SCRIPT.md) at the exact moment it happens.
+23 placed jump scares across the campaign (JS_00 in the prologue drive, then JS_01–JS_22). Each one is marked **⚡JS_xx** in [SCRIPT.md](SCRIPT.md) at the exact moment it happens.
 
 **The NGMI rule:** every scare is followed by a laugh within ~10 seconds. Scare → breath → joke. The joke releases the tension so the next scare lands again.
 
@@ -27,6 +27,7 @@ Types: **Big** (sting + sudden movement) · **Creep** (slow, wrong, no sting) ·
 
 | ID | Floor | Type | Trigger | What happens | The laugh after |
 | --- | --- | --- | --- | --- | --- |
+| JS_00 | Prologue | Jump | Car drives through the forest road | A hunched Ghoul on all fours in the headlights; hard brake; it turns its average face into the light | It takes a selfie using the headlights as a ring light: "Thanks for the light." |
 | JS_01 | F1 | Creep | Kevin looks at the TV ads, then back at the desk | Brenda's chair has turned to face him; her skull head tilts | "Number?" — "…Five." — "Mid." She turns back |
 | JS_02 | F1 | Big | Kevin enters the staff toilet | His reflection lags a frame, then slams its palm on the glass | The reflection fixes its hair |
 | JS_03 | F1 | Boss intro | Kevin passes the desk on the way to the lift | Lights cut; "NOW SERVING… NUMBER… FIVE." at full volume; Brenda standing on the desk, too tall, joints cracking | "Thirty years I've been waiting. And YOU get called first?" |
